@@ -1,14 +1,64 @@
+/*
+######### SELECTORES ##########
+*/
+
+/* SELECTOR UNIVERSAL */
+
+*{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* SELECTOR DE ETIQUETA */
+
 h1{
+    background: red;
+    color: white;
+    padding: 10px;
+}
 
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a{
+    font-size: 20px;
     color: red;
-    font-size: 50px;
+}
+
+/* SELECTOR DE ID */
+
+#descripcion{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#titulo{
+    background: blue;
+    border: 2px dashed black;
+}
+
+/* SELECTOR DE CLASE */
+
+.parrafo{
+    font-style: italic;
     text-decoration: underline;
-
+    font-weight: bold;
 }
 
-body{
-
-    background: gray;
-    
+.parrafo1{
+    background: green;
+    color: white;
+    padding: 10px;
 }
 
+.parrafo3{
+    background: orange;
+    text-decoration: none;
+    color: purple;
+}
+
+/* SELECTOR DE ATRIBUTO */

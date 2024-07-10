@@ -1,0 +1,112 @@
+/*
+Ejercicio completo con HTML y CSS
+
+1. Crear un documento HTML y vincularlo con un css
+2. crear una estructura html que cuente con un contenedor general,
+cabecera, meni, barra lateral, seccion de contenido prioncipal, elementos dentro del con
+tenedor principal y footer
+3. todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px y estar centrado
+4. header debe ocupar el 100% del ancho y tener un texto grande centrado
+5. menu debe tener los elementos uno al lado del otro
+6.el contenido principal debe tener un ancho del 70%
+7. el contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas
+8. la barra lateral debe tener un ancho del 30%
+9. el footer debe tener un ancho del 100% del div que lo contien y estar abajo del todo
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px dashed blue;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 90px;
+    font-size: 25px;
+    color: white;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #eeeeee;
+}
+
+#menu ul li{
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+#menu ul li a{
+    display: block;
+    color: #444;
+    padding: 15px;
+}
+
+#menu ul li:hover{
+    background: rgb(15,118,236);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{
+    color: white;
+}
+
+#contenido{
+    width: 70%;
+    height: 700px;
+    float: right;
+}
+
+#lateral{
+    width: 30%;
+    height: 700px;
+    background-color: #a19696;
+    float: left;
+    min-height: 500px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+
+#contenido > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+}
+
+#contenido .caja{
+    text-align: center;
+    float: left;
+    background-color: brown;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    height: 50px;
+    width: 400px;
+}

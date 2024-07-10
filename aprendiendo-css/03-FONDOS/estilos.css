@@ -1,17 +1,33 @@
 body{
     background-color: #ccc;
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+/* DESCOMENTAR PARA VER VALORES DE BACKGROUND
+body{
+    background-color: #ccc;
     background-image: url(pattern.jpg);
     background-repeat: repeat;
-    /*background-size: 100%;*/
+    /*background-size: 100%;
     background-attachment: fixed;
     background-position: 100% 100%;
-}
+}*/
 
 #caja{
     border: 5px solid black;
     padding: 10px;
     background-color: red;
     color: white;
+
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
 }
 
 h2{

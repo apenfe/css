@@ -1,0 +1,23 @@
+body{
+    background-color: #ccc;
+    background-image: url(pattern.jpg);
+    background-repeat: repeat;
+    /*background-size: 100%;*/
+    background-attachment: fixed;
+    background-position: 100% 100%;
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+h2{
+    color: white;
+    background: white;
+    border: 5px dashed blue;
+    padding: 20px;
+    background-image: url(patron2.jpg);
+}

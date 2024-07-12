@@ -139,3 +139,38 @@ body{
     box-shadow: 0px 0px 2px #ccc inset;
     background-color: rgb(238,237,237);
 }
+
+/* CONTENIDO */
+
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/* BARRA LATERAL */
+
+#aside{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif;
+}
+
+#aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child {
+    margin-bottom: 20px;
+}

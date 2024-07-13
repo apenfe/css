@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#container{
+    width: 70%;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header{
+    width: 100%;
+    background-color: lightblue;
+    color: #333;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    float: left;
+    min-height: 700px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 700px;
+}
+
+#articles{
+    background-color: lemonchiffon;
+    width: 75%;
+    min-height: 700px;
+    float: left;
+}
+
+#articles article{
+    width: 25%;
+    height: 150px;
+    background-color: green;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid black;
+    float: left;
+    margin: 15px;
+}
+
+/* responsive media queries */
+
+/* desde la anchura 0 px hasta la anchura 888px de panatalla*/
+@media (max-width:888px){
+
+    #articles article{
+        width: 40%;
+        background-color: red;
+    }
+
+}
+
+/* desde la anchura 0 px hasta la anchura 632px de panatalla*/
+@media (max-width: 632px){
+
+    #container{
+        overflow: hidden;
+    }
+
+    #articles{
+        width: 100%;
+    }
+
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: blue;
+    }
+
+}
+
+/* desde la anchura 0 px hasta la anchura 554px de panatalla*/
+@media (max-width: 554px){
+
+    header{
+        background-color: rgb(91, 166, 190);
+        font-size: 13px;
+    }
+
+    body{
+        background-color: salmon;
+    }
+
+}

@@ -52,8 +52,8 @@ body{
 }
 
 .salto{
+    float: none;
     clear: both;
-    margin: 0px auto;
 }
 
 /* CABECERA - LOGOTIPO*/
@@ -374,3 +374,109 @@ body{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+/* CONTENIDO PRINCIPAL */
+
+/* CONTENIDO PRINCIPAL  --> (TITULO) */
+
+#articles{
+    width: 860px;
+    float: left;
+}
+
+#articles h2{
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    background-image: url(../img/pxgray.png);
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+#articles article{
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    padding: 10px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#articles article h4{
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+}
+
+#articles article h4 a{
+    text-decoration: none;
+    color: #00538c;
+}
+
+#articles article h4 a:hover{
+    text-decoration: underline;
+}
+
+#articles article p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#articles article a{
+    text-decoration: none;
+    color: #00538c;
+}
+
+#articles article a:hover{
+    text-decoration: underline;
+    color: #00538c;
+}
+
+#articles .data{
+    float: right;
+    background-color: #393d3f;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: -10px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#articles .data span{
+    margin: 6px;
+}
+
+#articles #blog{
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+    font-family: "BebasNeue";
+}
+
+#blog a{
+    display: block;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538C;
+    text-decoration: none;
+}
+
+/* FOOTER */
+

@@ -2,164 +2,277 @@
 
 <html lang="es">
 
-    <head>
+<head>
 
-        <meta charset="utf-8"/>
-        <title>Máster en CSS</title>
-        <link rel="icon" type="image/x-icon" href="img/supertux.png" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <title>Máster en CSS</title>
+    <link rel="icon" type="image/x-icon" href="img/supertux.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- Inicio de la cabecera-->
+    <!-- Inicio de la cabecera-->
 
-        <header id="header">
+    <header id="header">
 
-            <div class="wrap">
+        <div class="wrap">
 
-                <div id="logo">
+            <div id="logo">
 
-                    <span class="gear">S</span>
-                    <h3>BLOG</h3>
-
-                </div>
-    
-                <nav id="menu">
-    
-                    <ul>
-    
-                        <li>
-                           <a href="index.html">INICIO</a> 
-                        </li>
-                        <li>
-                            <a href="index.html">BLOG</a> 
-                         </li>
-                         <li>
-                            <a href="index.html">FORMACION</a> 
-                         </li>
-                         <li>
-                            <a href="index.html">CONTACTO</a> 
-                         </li>
-    
-                    </ul>
-    
-                </nav>
+                <span class="gear">S</span>
+                <h3>BLOG</h3>
 
             </div>
 
-        </header>
+            <nav id="menu">
 
-        <!-- fin de la cabecera-->
+                <ul>
 
-        <section class="wrap">
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="index.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="index.html">FORMACION</a>
+                    </li>
+                    <li>
+                        <a href="index.html">CONTACTO</a>
+                    </li>
 
-            <section id="info">
+                </ul>
 
-                <!-- inicio del banner -->
+            </nav>
 
-                <div id="banner">
-                    <h1>CUROS DE DESARROLLO WEB CON VICTOR ROBLES WEB</h1>
+        </div>
+
+    </header>
+
+    <!-- fin de la cabecera-->
+
+    <section class="wrap">
+
+        <section id="info">
+
+            <!-- inicio del banner -->
+
+            <div id="banner">
+                <h1>CUROS DE DESARROLLO WEB CON VICTOR ROBLES WEB</h1>
+            </div>
+
+            <!-- final del banner -->
+
+            <!-- inicio de las tarjetas -->
+            <div id="cards">
+
+                <div class="card">
+                    <span class="icon">H</span>
+                    <h2 class="category">Desarrollo web</h2>
+                    <p class="description">Aprende los principales lenguajes para desarrollar webs ¡Conviertete en un
+                        webmaster!</p>
+                </div>
+                <div class="card">
+                    <span class="icon">_</span>
+                    <h2 class="category">Sistemas Operativos</h2>
+                    <p class="description">Aprende a administrar Sistemas Linux y Windows</p>
+                </div>
+                <div class="card">
+                    <span class="icon">S</span>
+                    <h2 class="category">Hardware</h2>
+                    <p class="description">Conoce los entresijos del hardware</p>
+                </div>
+                <div class="card">
+                    <span class="icon">u</span>
+                    <h2 class="category">Redes e Internet</h2>
+                    <p class="description">Aprende a configurar y administrar redes informaticas y servidores</p>
+                </div>
+                <div class="card">
+                    <span class="icon">a</span>
+                    <h2 class="category">Bases de Datos</h2>
+                    <p class="description">Aprende a montar y administrar bases de datos</p>
                 </div>
 
-                <!-- final del banner -->
-
-                <!-- inicio de las tarjetas -->                
-                <div id="cards">
-
-                    <div class="card">
-                        <span class="icon">H</span>
-                        <h2 class="category">Desarrollo web</h2>
-                        <p class="description">Aprende los principales lenguajes para desarrollar webs ¡Conviertete en un webmaster!</p>
-                    </div>
-                    <div class="card">
-                        <span class="icon">_</span>
-                        <h2 class="category">Sistemas Operativos</h2>
-                        <p class="description">Aprende a administrar Sistemas Linux y Windows</p>
-                    </div>
-                    <div class="card">
-                        <span class="icon">S</span>
-                        <h2 class="category">Hardware</h2>
-                        <p class="description">Conoce los entresijos del hardware</p>
-                    </div>
-                    <div class="card">
-                        <span class="icon">u</span>
-                        <h2 class="category">Redes e Internet</h2>
-                        <p class="description">Aprende a configurar y administrar redes informaticas y servidores</p>
-                    </div>
-                    <div class="card">
-                        <span class="icon">a</span>
-                        <h2 class="category">Bases de Datos</h2>
-                        <p class="description">Aprende a montar y administrar bases de datos</p>
-                    </div>
-
-                </div>
-                <!-- final de las tarjetas --> 
-
-            </section>
-
-            <!-- inicio de barra lateral --> 
-            <aside id="lateral">
-
-                <h3>BUSCAR</h3>
-
-                <div id="search">
-
-                    <form>
-                        <input type="text"/>
-                        <input type="button" value="L" class="icon"/>
-                    </form>
-
-                </div>
-
-                <h3>LOGIN</h3>
-
-                <div id="login" class="aside-box">
-
-                    <form>
-                        <label id="user" class="icon">U</label>
-                        <input type="email"/>
-
-                        <label id="password" class="icon">w</label>
-                        <input type="password"/>
-
-                        <input type="submit" value="Entrar"/>
-                        <input type="reset" value="Limpiar"/>
-                    </form>    
-
-                    <div class="salto"></div>
-
-                    <a href="#">Registrate aqui</a>
-                    <a href="#">¿Has olvidado tu contraseña?</a>
-
-                </div>
-
-                <h3>REDES SOCIALES</h3>
-
-                <div id="social" class="aside-box">
-                    <div class="twitter">
-                        <a href="#" class="icon">T</a>
-                    </div>
-                    <div class="youtube">
-                        <a href="#" class="icon">y</a>
-                    </div>
-                    <div class="facebook">
-                        <a href="#" class="icon">f</a>
-                    </div>
-                </div>
-
-                <h3>COLABORADORES</h3>
-
-                <div id="sponsors" class="aside-box">
-                  
-                </div>
-
-            </aside>
-            <!-- final de barra lateral --> 
+            </div>
+            <!-- final de las tarjetas -->
 
         </section>
 
-    </body>
+        <!-- inicio de barra lateral -->
+        <aside id="lateral">
+
+            <h3>BUSCAR</h3>
+
+            <div id="search">
+
+                <form>
+                    <input type="text" />
+                    <input type="button" value="L" class="icon" />
+                </form>
+
+            </div>
+
+            <h3>LOGIN</h3>
+
+            <div id="login" class="aside-box">
+
+                <form>
+                    <label id="user" class="icon">U</label>
+                    <input type="email" />
+
+                    <label id="password" class="icon">w</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+                    <input type="reset" value="Limpiar" />
+                </form>
+
+                <div class="salto"></div>
+
+                <a href="#">Registrate aqui</a>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+
+            </div>
+
+            <h3>REDES SOCIALES</h3>
+
+            <div id="social" class="aside-box">
+                <div class="twitter">
+                    <a href="#" class="icon">T</a>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon">y</a>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon">f</a>
+                </div>
+            </div>
+
+            <h3>COLABORADORES</h3>
+
+            <div id="sponsors" class="aside-box">
+
+            </div>
+
+        </aside>
+        <!-- final de barra lateral -->
+
+        <!-- inicio contenido principal -->
+        <main id="articles">
+
+            <h2>ULTIMOS ARTICULOS</h2>
+
+            <article>
+
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Puruebas</span>
+                </div>
+
+                <h4><a href="#">Titulo del artículo</a></h4>
+
+                <p>
+                    ¿Qué es Lorem Ipsum?
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                    cual incluye versiones de Lorem Ipsum.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </article>
+
+            <article>
+
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Puruebas</span>
+                </div>
+
+                <h4><a href="#">Titulo del artículo</a></h4>
+
+                <p>
+                    ¿Qué es Lorem Ipsum?
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                    cual incluye versiones de Lorem Ipsum.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </article>
+
+            <article>
+
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Puruebas</span>
+                </div>
+
+                <h4><a href="#">Titulo del artículo</a></h4>
+
+                <p>
+                    ¿Qué es Lorem Ipsum?
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                    cual incluye versiones de Lorem Ipsum.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </article>
+
+            <article>
+
+                <div class="data">
+                    <span>Fecha: 12 dic</span>
+                    <span>Categoría: Puruebas</span>
+                </div>
+
+                <h4><a href="#">Titulo del artículo</a></h4>
+
+                <p>
+                    ¿Qué es Lorem Ipsum?
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                    cual incluye versiones de Lorem Ipsum.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </article>
+
+            <article id="blog">
+                <a href="#">IR AL BLOG</a>
+            </article>
+
+        </main>
+        <!-- final contenido principal -->
+
+    </section>
+
+</body>
 
 </html>

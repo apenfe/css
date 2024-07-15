@@ -84,12 +84,51 @@ body{
     transition: all 300ms;
 }
 
+#logo:hover{
+    border-radius: 5px;
+    color: black;
+    background-color: #ccc;
+}
+
+#logo:hover .gear{
+    animation: fromBelow 500ms linear;
+}
+
+@keyframes fromBelow{
+
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
 #logo .gear{
     display: block;
     float: left;
     font-size: 30px;
     margin-top: 8px;
     margin-left: 26px;
+
+    /* ANIMACION DE HEAR */
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
 
 #logo h3{
@@ -99,6 +138,20 @@ body{
     margin-top: 5px;
     transition: all 300ms;
     margin-right: 60px;
+}
+
+#logo:hover h3{
+    animation: fromRight 500ms linear;
+}
+
+@keyframes fromRight{
+
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 /* CABECERA - BARRA NAVEGACION */
@@ -132,6 +185,7 @@ body{
 /* BANNER */
 
 #banner{
+    overflow: hidden;
     width: 95,5%;
     height: 100px;
     border: 10px solid white;
@@ -139,6 +193,16 @@ body{
     background-image: url(../img/bakbaner.png);
     background-position: -250px -200px;
     margin: 20px auto;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner{
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: -250px -200px;
+    }
 }
 
 #banner h1{
@@ -151,6 +215,30 @@ body{
     margin: 27px auto;
     font-weight: normal;
     text-shadow: 2px 2px 1px black;
+    animation: showText 10s linear;
+}
+
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;  
+    }
 }
 
 /* BANNER TARJETAS */
@@ -172,6 +260,11 @@ body{
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 2px #ddd;
+    transition: all 300ms;
+}
+
+.card:hover{
+    background-color: black;
 }
 
 .card:last-child{
@@ -186,6 +279,22 @@ body{
     line-height: 110px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
+}
+
+.card:hover .icon{
+    font-size: 70px;
+    color: #37BCF9;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
 }
 
 .card .category{
@@ -196,6 +305,23 @@ body{
     font-size: 21px;
     font-weight: bold;
     text-align: center;
+    transition: all 300ms;
+}
+
+.card:hover .category{
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
 }
 
 .card .description{
@@ -203,7 +329,25 @@ body{
     color: #056eb4;
     text-align: center;
     font-size: 15px;
+    transition: all 300ms;
 }
+
+.card:hover .description{
+    color: white;
+    animation: showDescription 300ms linear;
+}
+
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+        color: black;
+    }
+    to{
+        transform: translateX(0%);
+        color: white;
+    }
+}
+
 
 /* BARRA LATERAL */
 
@@ -375,6 +519,31 @@ body{
     margin-bottom: 20px;
 }
 
+#social .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background-color: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -52px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+#social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 /* CONTENIDO PRINCIPAL */
 
 /* CONTENIDO PRINCIPAL  --> (TITULO) */
@@ -467,6 +636,7 @@ body{
     line-height: 100px;
     text-align: center;
     font-family: "BebasNeue";
+    transition: all 800ms;
 }
 
 #blog a{
@@ -476,6 +646,38 @@ body{
     letter-spacing: 3px;
     color: #00538C;
     text-decoration: none;
+    transition: all 800ms;
+}
+
+#blog:hover{
+    background-color: #333;
+    border: 10px solid #37BCF9;
+    border-radius: 240px;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 8s infinite linear;
+}
+
+#blog:hover a{
+    color: white;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+}
+
+@keyframes blink{
+    0%{
+        border: 10px solid #37BCF9;
+    }
+    25%{
+        border: 10px solid green;
+    }
+    50%{
+        border: 10px solid yellow;
+    }
+    75%{
+        border: 10px solid white;
+    }
+    100%{
+        border: 10px solid #37BCF9;
+    }
 }
 
 /* FOOTER */
@@ -530,13 +732,16 @@ body{
     border-bottom: 1px solid #ccc;
 }
 
-#footer #menu_footer ul li:first-child{
-    border-bottom: none
-}
-
 #footer ul li a{
     display: block;
     height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
 }
 
 #footer iframe{

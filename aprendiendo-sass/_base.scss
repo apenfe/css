@@ -63,3 +63,54 @@ p{
 .listado{
     @include crearBordes(green, 20px, #333);
 }
+
+// herencia
+%alert-normal{
+    border: 1px solid gray;
+    background-color: #eee;
+    color: gray;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.alert{
+    @extend %alert-normal; // igual que la funcion pero son parametros
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-success{
+    @extend %alert-normal;
+    color: green;
+    border-color: green;
+}
+
+// operadores en sass
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+h1{
+    font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas{
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}

@@ -114,3 +114,37 @@ $wrap: 900px;
     width: $caja / $wrap * 100%;
     margin: 10px;
 }
+
+// condicionales - if
+
+$color-fondo: black;
+
+h1{
+
+    @if $color-fondo == #ccc { // !=
+
+        color: black;
+
+    } @else if $color-fondo == black {
+
+        color: lightcoral;
+
+    } @else {
+
+        color: blue;
+    }
+
+}
+
+// for
+
+$contador: 1;
+
+@for $contador from 1 to 8 {
+
+    .listado ul li:nth-child(#{$contador}) {
+        color: orange;
+        font-size: $contador * 5px;
+    }
+
+}

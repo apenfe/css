@@ -85,6 +85,45 @@ h1 {
 }
 
 h1 {
+  color: lightcoral;
+}
+
+.listado ul li:nth-child(1) {
+  color: orange;
+  font-size: 5px;
+}
+
+.listado ul li:nth-child(2) {
+  color: orange;
+  font-size: 10px;
+}
+
+.listado ul li:nth-child(3) {
+  color: orange;
+  font-size: 15px;
+}
+
+.listado ul li:nth-child(4) {
+  color: orange;
+  font-size: 20px;
+}
+
+.listado ul li:nth-child(5) {
+  color: orange;
+  font-size: 25px;
+}
+
+.listado ul li:nth-child(6) {
+  color: orange;
+  font-size: 30px;
+}
+
+.listado ul li:nth-child(7) {
+  color: orange;
+  font-size: 35px;
+}
+
+h1 {
   text-decoration: underline;
 }
 

@@ -1,0 +1,66 @@
+// variables
+@bgcolor: lightblue;
+@b: body;
+@fuente: Arial;
+
+@{b}{
+    background-color: @bgcolor;
+}
+
+h1{
+    font-family: @fuente;
+}
+
+// anidacion
+
+.informacion{
+
+    ul{
+        a{
+            color: white;
+            font-size: 18px;
+        }
+    }
+}
+
+// mixins 
+
+.sombras(@size){
+    box-shadow: 0px 0px @size black;
+    text-shadow: 0px 0px @size gray;
+    background-color: blue;
+}
+
+.informacion{
+    .sombras(5px);
+}
+
+// operadores
+
+h1{
+    font-size: 30px + 7px;
+}
+
+// mixins condicionales
+
+.textoNegro(@value) when (@value=true){
+    color: black;
+}
+
+h1{
+    color: blue;
+    .textoNegro(true);
+}
+
+// bucles
+.loop(@cont) when (@cont > 0) {
+
+    .loop((@cont - 1));
+    height: (900px / @cont);
+
+}
+
+.informacion{
+    height: 900px;
+    .loop(5);
+}

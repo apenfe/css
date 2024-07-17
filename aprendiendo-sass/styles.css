@@ -33,4 +33,20 @@ p {
   color: orange;
 }
 
+.caja {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.listado {
+  border: 20px solid green;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #333;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */

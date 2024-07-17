@@ -1,0 +1,65 @@
+// variables
+$fuente-tipica: Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+$color-secundario: rgb(122,20,20);
+
+// uso de variables
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    font-family: $fuente-tipica;
+    color: $color-letra;
+}
+
+p{
+    color: $color-secundario;
+}
+
+// anidacion
+.caja{
+
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+
+    h1{
+        color: blue;
+    }
+
+    p{
+        color:green;
+    }
+
+    .info{
+        font-size: 10px;
+
+        .author{
+            font-size: 15px;
+            color: orange;
+        }
+        
+    }
+
+}
+
+// mixins / funciones
+
+@mixin crearBordes($color, $size, $shadow){
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px $size $shadow;
+}
+
+.caja{
+    @include crearBordes(red, 10px, black);
+}
+
+.listado{
+    @include crearBordes(green, 20px, #333);
+}

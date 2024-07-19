@@ -1,4 +1,6 @@
 body{
+
+    --rojo: red;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -10,16 +12,24 @@ body{
     flex-direction: row; /* row, colum, row-reverse y colum-reverse*/
     flex-wrap: wrap; /* que los elementos no sobresalgan (cuadricula) */
 
+    justify-content: space-evenly; /* flex-start, flex-end, left, right, center, space around*/
+/* space between, space-evenly */
+
+    height: 600px;
+   /* align-items: center; /* center, flex-end, flex-start, baseline */
+
 
     border: 3px solid black;
     padding: 5px;
 }
 
 .caja{
+     flex-grow: 1;
+    flex-basis: calc((100% / 3) - 68px);
+    /*flex-grow: 1; /* HACE QUE LOS ELEMENTOS HIJOS SEAN ADAPTABLES, DEFECTO 1*/
 
-    flex-grow: 1; /* HACE QUE LOS ELEMENTOS HIJOS SEAN ADAPTABLES, DEFECTO 1*/
 
-
+    height: 120px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -31,27 +41,32 @@ body{
 }
 
 .red{
-    flex-grow: 2; /* le ada un tamaño mayor a este elemento */
-    order: 4;
-    background-color: red;
+    /*flex-grow: 2; /* le ada un tamaño mayor a este elemento */
+    /*flex-basis: 100%;
+    order: 4;*/
+
+    align-self: flex-start;
+    background-color: var(--rojo);
 }
 
 .green{
-    flex-grow: 4; /* le ada un tamaño mayor a este elemento */
-    order: 2;
+    margin-top: 9%;
+     /*flex-grow: 4; /* le ada un tamaño mayor a este elemento */
+    /*order: 2;*/
     background-color: green;
 }
 
 .blue{
+    align-self: center;
+     /*flex-shrink: 0; /* reduce tamaño */
 
-    flex-shrink: 0; /* reduce tamaño */
-
-    order: 1;
+    /*order: 1;*/
     background-color: blue;
 }
 
 .orange{
-    flex-grow: 8; /* le ada un tamaño mayor a este elemento */
-    order: 3;
+    align-self: flex-end;
+    /*flex-grow: 8; /* le ada un tamaño mayor a este elemento */
+    /*order: 3;*/
     background-color: orange;
 }

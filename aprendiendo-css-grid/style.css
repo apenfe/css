@@ -4,6 +4,21 @@ body{
 }
 
 .layout{
+
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+
+    /* definir el contenedor de grid */
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr); /* o  grid-template-columns: repeat(4, 25%); */
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+
+    /* espacio entre elemntos grid */
+    grid-gap: 10px;
+
+    padding: 10px;
     border: 3px solid orangered;
 }
 
@@ -13,22 +28,46 @@ body{
     color: white;
     padding: 20px;
     border: 4px solid #222;
-    margin: 10px;
     background-color: grey;
 }
 
 .layout .red{
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
     background-color: red;
 }
 
 .layout .blue{
+
+    grid-column: 2 / 4 ;
     background-color: blue;
 }
 
 .layout .green{
+
+    grid-row: 2 / 6;
     background-color: green;
 }
 
 .layout .pink{
+
+    grid-column: 2 / 3 ;
+    grid-row: 3 / 5;
+
     background-color: pink;
+}
+
+.layout .orange{
+
+    grid-row: 3 / 5;
+    background-color: orange;
+}
+
+.layout .lightblue{
+
+    grid-column: 2 / 4 ;
+
+    background-color: lightblue;
 }

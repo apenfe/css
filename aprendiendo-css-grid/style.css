@@ -71,3 +71,84 @@ body{
 
     background-color: lightblue;
 }
+
+/* ------------- ejercicio ----------------------- */
+
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+
+    /* definir el contenedor de grid */
+    display: grid;
+
+    grid-template-rows: 150px 70px 1fr 70px; /* o  grid-template-columns: repeat(4, 25%); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#cabecera{
+
+    grid-column: 1 /6 ;
+    background-color: blue;
+    color: white;
+
+}
+
+#menu{
+    grid-column: 1 /6 ;
+    background-color: lightblue;
+    color: black;
+    
+
+}
+
+#menu ul{
+    
+    /* definir el contenedor de grid */
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#contenido{
+    grid-column: 1 /5 ;
+    background-color: #eee;
+
+    /* definir el contenedor de grid */
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr; /* o  grid-template-columns: repeat(4, 25%); */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+#contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    background-color: orange;
+    color: white;
+}
+
+#pie-pagina{
+    grid-column: 1 /6 ;
+    background-color: black;
+    color: white;
+}

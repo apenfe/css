@@ -6,3 +6,6 @@
 bin/
 .Rproj.user
 .sonarlint
+JQuery/
+bootstrap/
+

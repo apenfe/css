@@ -1,0 +1,28 @@
+// sass estilos.scss styles.css
+// sass --watch estilos.scss styles.css
+
+
+// Estilos generales de la pagina
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    height: 930px;
+    width: 100%;
+    background-image: url(../img/banner.png);
+    background-size:cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#about-me{
+    height: 930px;
+    width: 100%;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}

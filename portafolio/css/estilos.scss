@@ -185,24 +185,50 @@ body{
         top: 85px;
         left: 1180px;
         
-
     }
 
     #titular{
 
-        width: 30%;
-        height: 350px;
-        background-color: #6653b6;
+        width: 40%;
+        height: 320px;
+        
         position: relative;
         top: 150px;
         left: 380px;
 
         #nombre{
 
+            font-size: 36px;
+            letter-spacing: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+
+            #hi{
+
+                color: $texto-oscuro;
+
+                #coma{
+                    color: gray;
+                }
+            }
+
+            #soy{
+
+                color: $texto-oscuro;
+
+                #yo{
+                    color: #5B38E3 !important;
+                }
+            }
+
         }
 
         p{
-
+            margin: 10px;
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
         }
 
     }

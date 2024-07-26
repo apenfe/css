@@ -76,7 +76,7 @@ body{
 
     width: 100%;
     height: 120px;
-    background-color: rgb(243, 242, 242);
+    background-color: #1F2227;
     padding: 10px;
     box-shadow: 1px 2px 5px #202020;
     line-height: 120px;
@@ -88,6 +88,12 @@ body{
         float: left;
         margin-top: 14px;
         margin-left: 30px;
+        background-color: transparent;
+    }
+
+    .logo:hover{
+        box-shadow: 1px 1px 2px, 0px 0px 2px, 3px 4px 5px #4DE8ED;
+
     }
 
     #menu{
@@ -103,16 +109,17 @@ body{
             margin: 0px 5px 0px 5px;
             letter-spacing: 1px;
             line-height: 120px;
-            color: #202020;
             text-align: center;
 
             a{
                 display: block;
                 height: 60px;
                 width: 140px;
-                line-height: 60px;
+                line-height: 50px;
                 text-decoration: none;
-                color: #202020;
+                color: white;
+                text-decoration: underline;
+                text-decoration-color: #45815F;
                 font-size: 25px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 transition: all 300ms;
@@ -332,6 +339,27 @@ body{
     width: 100%;
     text-align: center;
     padding: 60px;
+
+    #projects-title{
+        
+        margin:0px auto;
+        width: 18%;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        text-decoration-color: #45815F;
+        transition: all 300ms;
+    }
+
+    #projects-title:hover{
+        font-size: 42px;
+        background-color: #45815F;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #4bd888;
+    }
+
 }
 
 #contact{
@@ -339,13 +367,106 @@ body{
     width: 100%;
     text-align: center;
     padding: 60px;
+
+    #contact-title{
+        
+        margin:0px auto;
+        width: 18%;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        text-decoration-color: #45815F;
+        transition: all 300ms;
+    }
+
+    #contact-title:hover{
+        font-size: 42px;
+        background-color: #45815F;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #4bd888;
+    }
+
 }
 
 #footer{
+    
+    display: block;
+    float: none;
     width: 100%;
-    height: 80px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 1px 1px 5px #202020;
-    line-height: 80px;
+    height: 155px;
+    background-color: #333;   
+
+    .logo{
+        display: block;
+        float: left;
+        margin-top: 35px;
+        margin-left: 35px;
+        background-color: transparent;
+        transition: all 300ms;
+    }
+
+    .logo:hover{
+        box-shadow: 1px 1px 2px, 0px 0px 2px, 3px 4px 5px #4DE8ED;
+    }
+
+    #menu-footer{
+        display: block;
+        float: right;
+        height: 120px;
+        line-height: 120px;
+        background-color: transparent;
+        margin-right: 60px;
+
+        ul li{
+            display: inline-block;
+            margin: 0px 5px 0px 5px;
+            letter-spacing: 1px;
+            line-height: 120px;
+            color: #202020;
+            text-align: center;
+
+            a{
+                display: block;
+                height: 60px;
+                width: 140px;
+                line-height: 60px;
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                transition: all 300ms;
+                text-decoration: underline;
+                text-decoration-color: #45815F;
+            }
+        }
+
+        ul li:hover a{
+            background-color: #45815F;
+            text-decoration: underline;
+            color: white;
+            border-radius: 15px;
+            text-decoration-color: yellow;
+        }
+
+    }
+
+    #autor{
+
+        display: block;
+        float: left;
+        width: 100%;
+        letter-spacing: 1px;
+
+        h3{
+            display: block;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+    }
 }

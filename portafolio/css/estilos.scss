@@ -24,16 +24,39 @@ body{
 .logo{
 
     float: left;
-    height: 70px;
-    width: 230px;
+    height: 80px;
+    width: 90px;
     text-align: center;
     background-color: #ccc;
-    line-height: 70px;
-    color: $texto-oscuro;
-    font-size: 25px;
-    font-family: Verdana, sans-serif;
+    line-height: 90px;
     border-radius: 15px;
     box-shadow: 2px 2px 5px $sombra;
+    position: relative;
+
+    img{
+        position: relative;
+        top: 0px;
+
+        width: 70px;
+    }
+
+    transition: all 300ms;
+
+}
+
+.logo:hover{
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px 3px 5px $sombra;
+    position: relative;
+
+    img{
+        position: relative;
+        top: 0px;
+
+        width: 72px;
+    }
+
 }
 
 #container{
@@ -58,6 +81,7 @@ body{
     box-shadow: 1px 2px 5px #202020;
     line-height: 120px;
     z-index: 2;
+    box-shadow: 1px 2px 3px #333 !important;
 
     .logo{
         display: block;
@@ -96,9 +120,11 @@ body{
         }
 
         ul li:hover a{
-            background-color: #333;
+            background-color: #45815F;
+            text-decoration: underline;
             color: white;
             border-radius: 15px;
+            text-decoration-color: yellow;
         }
 
     }
@@ -109,7 +135,7 @@ body{
 
 #banner{
 
-    background: url(../img/bannerv1.png);
+    background: url(../img/bannerv4.png);
     height: 820px;
     z-index: 1;
     position: relative;
@@ -120,8 +146,8 @@ body{
         display: block;
         width: 20%;
         height: 60px;
-        top: 600px;
-        left: 380px;
+        top: 570px;
+        left: 420px;
 
         #get-in-touch{
 
@@ -130,7 +156,7 @@ body{
             float: left;
             height: 60px;
             width: 180px;
-            background-color: #5B38E3;
+            background-color: #45815F;
             color: $texto-claro;
             text-align: center;
             line-height: 60px;
@@ -141,10 +167,11 @@ body{
         }
 
         #get-in-touch:hover{
-            background-color: #3817bd;
+            background-color: #45815F;
             font-size: 16px;
             border-radius: 18px;
-            box-shadow: 3px 2px 5px #6653b6;
+            box-shadow: 3px 2px 5px, 1px 2px 8px, 1px 1px 2px #23db73;
+          
         }
 
         #download{
@@ -155,7 +182,7 @@ body{
             width: 180px;
             background-color: $fondo-claro;
             color: $texto-oscuro;
-            border: 1px solid $sombra;
+            border: 2px solid #45815F;
             text-align: center;
             line-height: 60px;
             font-size: 15px;
@@ -167,11 +194,11 @@ body{
         #download:hover{
             background-color: rgb(219, 43, 43);
             color: $texto-claro;
-            border: 3px solid $sombra;
+           border: none;
             font-size: 16px;
             font-family:  Courier, monospace;
             border-radius: 16px;
-            box-shadow: 3px 2px 5px $sombra;
+            box-shadow: 3px 2px 5px gray;
         }
     
     }
@@ -189,27 +216,39 @@ body{
 
     #titular{
 
-        width: 40%;
-        height: 320px;
-        
+        width: 35%;
+        height: 260px;
         position: relative;
-        top: 150px;
-        left: 380px;
-
+        top: 198px;
+        left: 420px;
+      
         #nombre{
 
-            font-size: 36px;
-            letter-spacing: 2px;
+            font-size: 30px;
+            letter-spacing: 1px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: lighter;
 
             #hi{
-
+                font-size: 70px;
                 color: $texto-oscuro;
+                transition: all 400ms;
 
                 #coma{
                     color: gray;
                 }
+            }
+
+            #hi:hover{
+
+                color: #FFDE59;
+                font-size: 80px;
+                text-decoration: underline;
+
+                #coma{
+                    color: black;
+                }
+
             }
 
             #soy{
@@ -217,7 +256,20 @@ body{
                 color: $texto-oscuro;
 
                 #yo{
-                    color: #5B38E3 !important;
+                    color: #45815F !important;
+                    text-shadow: 1px 2px 3px #333;
+                }
+                transition: all 400ms;
+            }
+
+            #soy:hover{
+
+                color: $texto-oscuro;
+
+                #yo{
+                    color: #45815F !important;
+                    font-size: 65px;
+                    text-shadow: 2px 2px 5px black;
                 }
             }
 
@@ -231,6 +283,12 @@ body{
             font-weight: lighter;
         }
 
+        strong::selection,
+        p::selection{
+            background-color: yellow;
+            color: black;
+        }
+
     }
     
 }
@@ -238,12 +296,35 @@ body{
 // about me
 
 #about-me{
+
+
     height: 1160px;
     width: 100%;
     background-color: #202020;
     color: white;
     text-align: center;
-    padding: 60px;
+    padding: 40px;
+    margin: 0px auto;
+
+    #about-me-title{
+        
+        margin:0px auto;
+        width: 18%;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        text-decoration-color: #45815F;
+        transition: all 300ms;
+    }
+
+    #about-me-title:hover{
+        font-size: 42px;
+        background-color: #45815F;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #4bd888;
+    }
 }
 
 #projects{

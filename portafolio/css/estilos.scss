@@ -8,6 +8,11 @@ $sombra: black;
 $texto-oscuro: #333;
 $texto-claro: white;
 
+$azul-tema: #0071A0;
+$azul-neon: #4DE8ED;
+$verde-tema: #45815F;
+$negro-tema: #1F2227;
+
 // Estilos generales de la pagina
 
 *{
@@ -96,6 +101,55 @@ body{
 
     }
 
+    #social{
+
+        display: block;
+        float: left;
+        height: 100px;
+        width: 10%;
+       
+        margin-left: 550px;
+        line-height:110px ;
+        padding: 5px;
+
+        #linkedin{
+
+            display: block;
+            float: left;
+            font-size: 60px;
+            
+            a{
+                text-decoration: none;
+            }
+
+            transition: all 200ms;
+        }
+
+        #linkedin:hover{
+            font-size: 65px;
+        }
+
+        #github{
+
+            display: block;
+            float: right;
+            font-size: 60px;
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            transition: all 200ms;
+            
+        }
+
+        #github:hover{
+            font-size: 65px;
+        }
+
+    }
+
     #menu{
         display: block;
         float: right;
@@ -110,28 +164,32 @@ body{
             letter-spacing: 1px;
             line-height: 120px;
             text-align: center;
-
+            border-radius: 20px;
+            box-shadow: 1px 1px 2px, 0px 0px 2px, 3px 4px 5px #09090B;
+           
             a{
                 display: block;
                 height: 60px;
-                width: 140px;
+                width: 135px;
                 line-height: 50px;
-                text-decoration: none;
                 color: white;
                 text-decoration: underline;
-                text-decoration-color: #45815F;
+                text-decoration-color: $azul-tema;
                 font-size: 25px;
+                border-radius: 15px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-                transition: all 300ms;
+                
             }
+
+            transition: all 300ms;
         }
 
-        ul li:hover a{
-            background-color: #45815F;
-            text-decoration: underline;
-            color: white;
-            border-radius: 15px;
-            text-decoration-color: yellow;
+        ul li:hover {
+
+            box-shadow: 5px 5px 3px #4DE8ED,  /* Sombra 1 */
+                        -5px -5px 3px #4DE8ED,  /* Sombra 2 */
+                        3px -3px 3px #4DE8ED,  /* Sombra 3 */
+                        -4px 4px 3px #4DE8ED;  /* Sombra 4 */ 
         }
 
     }
@@ -142,7 +200,7 @@ body{
 
 #banner{
 
-    background: url(../img/bannerv4.png);
+    background: url(../img/bannerv5.png);
     height: 820px;
     z-index: 1;
     position: relative;
@@ -170,7 +228,13 @@ body{
             font-size: 14px;
             font-family:  Courier, monospace;
             border-radius: 15px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
             transition: all 300ms;
+            
         }
 
         #get-in-touch:hover{
@@ -248,7 +312,7 @@ body{
 
             #hi:hover{
 
-                color: #FFDE59;
+                color: #0071A0;
                 font-size: 80px;
                 text-decoration: underline;
 
@@ -263,10 +327,10 @@ body{
                 color: $texto-oscuro;
 
                 #yo{
-                    color: #45815F !important;
+                    color: #45815F;
                     text-shadow: 1px 2px 3px #333;
                 }
-                transition: all 400ms;
+                transition: all 300ms;
             }
 
             #soy:hover{
@@ -316,7 +380,7 @@ body{
     #about-me-title{
         
         margin:0px auto;
-        width: 18%;
+        width: 16%;
         font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
@@ -326,11 +390,12 @@ body{
 
     #about-me-title:hover{
         font-size: 42px;
-        background-color: #45815F;
+        background-color: $azul-tema;
+        color: white;
         text-decoration: underline;
-        text-decoration-color: yellow;
+        text-decoration-color: $azul-neon;
         border-radius: 10px;
-        box-shadow: 2px 2px 5px #4bd888;
+        box-shadow: 2px 2px 5px $azul-neon;
     }
 }
 
@@ -343,7 +408,7 @@ body{
     #projects-title{
         
         margin:0px auto;
-        width: 18%;
+        width: 15%;
         font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
@@ -353,11 +418,12 @@ body{
 
     #projects-title:hover{
         font-size: 42px;
-        background-color: #45815F;
+        background-color: $azul-tema;
+        color: white;
         text-decoration: underline;
-        text-decoration-color: yellow;
+        text-decoration-color: $azul-neon;
         border-radius: 10px;
-        box-shadow: 2px 2px 5px #4bd888;
+        box-shadow: 2px 2px 5px $azul-neon;
     }
 
 }
@@ -371,7 +437,7 @@ body{
     #contact-title{
         
         margin:0px auto;
-        width: 18%;
+        width: 15%;
         font-size: 40px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
@@ -381,11 +447,12 @@ body{
 
     #contact-title:hover{
         font-size: 42px;
-        background-color: #45815F;
+        background-color: $azul-tema;
+        color: white;
         text-decoration: underline;
-        text-decoration-color: yellow;
+        text-decoration-color: $azul-neon;
         border-radius: 10px;
-        box-shadow: 2px 2px 5px #4bd888;
+        box-shadow: 2px 2px 5px $azul-neon;
     }
 
 }
@@ -424,30 +491,33 @@ body{
             margin: 0px 5px 0px 5px;
             letter-spacing: 1px;
             line-height: 120px;
-            color: #202020;
             text-align: center;
-
+            border-radius: 20px;
+            box-shadow: 1px 1px 2px, 0px 0px 2px, 3px 4px 5px #09090B;
+           
             a{
                 display: block;
                 height: 60px;
-                width: 140px;
-                line-height: 60px;
-                text-decoration: none;
+                width: 135px;
+                line-height: 50px;
                 color: white;
-                font-size: 25px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                transition: all 300ms;
                 text-decoration: underline;
-                text-decoration-color: #45815F;
+                text-decoration-color: $azul-tema;
+                font-size: 25px;
+                border-radius: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
             }
+
+            transition: all 300ms;
         }
 
-        ul li:hover a{
-            background-color: #45815F;
-            text-decoration: underline;
-            color: white;
-            border-radius: 15px;
-            text-decoration-color: yellow;
+        ul li:hover {
+
+            box-shadow: 5px 5px 3px #4DE8ED,  /* Sombra 1 */
+                        -5px -5px 3px #4DE8ED,  /* Sombra 2 */
+                        3px -3px 3px #4DE8ED,  /* Sombra 3 */
+                        -4px 4px 3px #4DE8ED;  /* Sombra 4 */ 
         }
 
     }
@@ -463,7 +533,7 @@ body{
             display: block;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             margin-bottom: 15px;
         }

@@ -1,0 +1,13 @@
+:root{
+    --color-principal: green;
+    --fuente: Arial, Verdana;
+}
+
+h1{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+}
+
+a{
+    color: var(--color-principal);
+}

@@ -1,0 +1,31 @@
+html{
+    font-size: 10px; /* por defecto es 16px */
+}
+
+.padre{
+    font-size: 10px;
+}
+
+.padre h1{
+    font-size: 3em;
+}
+
+.padre2{
+    font-size: 34px;
+}
+
+.caja{
+
+    font-size: 1em; /* em depende siempre del elemento padre */
+
+    width: 13em;
+    height: 13em;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.caja h3{
+    font-size: 4rem;
+}

@@ -1,0 +1,64 @@
+/* BEM */
+.cards{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 5px;
+}
+
+.cards__card{
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card__title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card__link{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card__content{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* clasico */
+.cards{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 5px;
+}
+
+.cards .card{
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    padding: 10px;
+}
+
+.cards .card h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards .card a{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}

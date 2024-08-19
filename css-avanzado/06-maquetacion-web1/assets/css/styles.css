@@ -275,9 +275,10 @@ body{
     right: 100%;
 }
 
-/* SOBRE MI */
+/* ESTILOS GENERALES (SOBRE MI Y OTRAS PAGINAS) */
 
-.content__about{
+.content__about,
+.content__resume{
     height: 100%;
     min-height: 100%;
     overflow: auto;
@@ -286,17 +287,20 @@ body{
     display: block;
 }
 
-.about__header{
+.about__header,
+.resume__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 
-.about__title{
+.about__title,
+.resume__title{
     font-size: 3.2rem;
     position: relative;
 }
 
-.about__title::after{
+.about__title::after,
+.resume__title::after{
     content: "";
     position: absolute;
     width: 50px;

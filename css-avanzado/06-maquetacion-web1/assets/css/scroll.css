@@ -58,7 +58,7 @@
 }
 
 /* SCROLL PARA MOZILLA (BARRA LATERAL) */
-
+/*
 .layout__aside{
     scrollbar-width: thin;
     scrollbar-color: var(--color-principal) var(--color-secondary);
@@ -67,7 +67,7 @@
 
 /* SCROLL PARA MOZILLA */
 
-.content__page{
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-scrollbar) transparent;
-}
+/*.content__page{*/
+/*    scrollbar-width: thin;
+/*    scrollbar-color: var(--color-scrollbar) transparent;
+/*}

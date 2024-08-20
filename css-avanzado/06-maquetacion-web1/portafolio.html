@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--ESTILOS-->
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css"/>
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link rel="stylesheet" href="./assets/css/scroll.css"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
+
+        <title>APENFE | DEVELOPER</title>
+
+    </head>
+
+    <body>
+        
+        <!-- Layout principal --> 
+        <div class="layout">
+
+            <!-- Barra lateral (info usuario) -->
+            <aside class="layout__aside">
+
+                <section class="aside__user-info">
+
+                    <!-- Informacion general usuario -->
+
+                    <div class="user-info__general">
+
+                        <div class="user-info__container-image">
+
+                            <img src="./assets/img/perfilsinfondo.png" class="user-info__image" alt="foto de perfil">
+                            <!-- AQUI IRIA LA SOMBRA -->
+                        </div>
+
+                        <h2 class="user-info__name">Adrián Peñalver</h2>
+                        <h4 class="user-info__job">Desarrollador WEB</h4>
+
+                    </div>
+
+                    <!-- Menu de navegacion -->
+                    <nav class="layout__menu">
+
+                        <ul class="menu__list">
+
+                            <li class="menu__option">
+                                <a href="index.html" class="menu__link">
+                                    <i class="fa-solid fa-house menu__icon"></i>
+                                    <span class="menu__overlay">Home</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="sobre-mi.html" class="menu__link">
+                                    <i class="fa-solid fa-user menu__icon"></i>
+                                    <span class="menu__overlay">Sobre mi</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="estudios.html" class="menu__link">
+                                    <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                    <span class="menu__overlay">Curriculum</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="portafolio.html" class="menu__link menu__link--active">
+                                    <i class="fa-solid fa-briefcase menu__icon"></i>
+                                    <span class="menu__overlay">Portafolio</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="blog.html" class="menu__link">
+                                    <i class="fa-solid fa-book menu__icon"></i>
+                                    <span class="menu__overlay">Blog</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="contacto.html" class="menu__link">
+                                    <i class="fa-solid fa-envelope menu__icon"></i>
+                                    <span class="menu__overlay">Contacto</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <!-- Links a redes sociales -->
+                    <div class="user-info__links">
+
+                        <ul class="links__social">
+
+                            <li class="social__option">
+                                <a href="https://www.youtube.com/@apenfe" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-youtube social__icon"></i>
+                                </a>
+                            </li>
+                            <li class="social__option">
+                                <a href="https://www.linkedin.com/in/adrian-penalver/" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-linkedin social__icon"></i>
+                                </a>
+                            </li>
+                            <li class="social__option">
+                                <a href="https://github.com/apenfe" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-github social__icon"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Boton del CV -->
+                    <div class="user-info__buttons">
+                        <a href="#" class="user-info__btn">Descargar CV</a>
+                    </div>
+
+                    <!-- Pie de página -->
+                    <footer class="user-info__footer">
+                        &copy; 2024 Adrián Peñalver
+                    </footer>
+
+                </section>
+
+            </aside>
+
+            <!-- Contenido principal -->
+            <main class="layout__content">
+
+                <section class="content__page content__portfolio">
+                    <!-- Este es el contenido que cambiara -->
+
+                    <header class="portfolio__header">
+
+                        <h1 class="portfolio__title">Portafolio</h1>
+
+                    </header>
+
+                    <nav class="portfolio__navbar">
+
+                        <ul class="portfolio__menu">
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">Todo</a>
+                            </li>
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">Cursos</a>
+                            </li>
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">WEB</a>
+                            </li>
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">Redes sociales</a>
+                            </li>
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">Videos</a>
+                            </li>
+
+                            <li class="portfolio__option portfolio__option--active">
+                                <a href="#" class="portfolio__link">Proyectos</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <section class="portfolio__gallery">
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-1.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Producción de video</figcaption>
+                            <i class="gallery__icon fa-solid fa-video-camera"></i>
+                            <span class="gallery__category">Videos</span>
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-2.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Master en JS</figcaption>
+                            <i class="gallery__icon fa-solid fa-code"></i>
+                            <span class="gallery__category">Cursos</span>
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-3.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Master en VUE.js</figcaption>
+                            <i class="gallery__icon fa-solid fa-code-commit"></i>
+                            <span class="gallery__category">Cursos</span>
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-4.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Red social tipo Twitter</figcaption>
+                            <i class="gallery__icon fa-solid fa-code"></i>
+                            <span class="gallery__category">WEB</span>
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-5.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Master en logica de programacion</figcaption>
+                            <i class="gallery__icon fa-solid fa-code"></i>
+                            <span class="gallery__category">Cursos</span>
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <div class="gallery__container__image">
+                                <a href="#" class="gallery__link">
+                                    <img src="assets/img/galeria-6.jpg" class="gallery__image">
+                                </a>
+                            </div>
+
+                            <figcaption class="gallery__title">Galeria de imagenes</figcaption>
+                            <i class="gallery__icon fa-solid fa-image-portrait"></i>
+                            <span class="gallery__category">Proyectos</span>
+                        </figure>
+
+                    </section>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

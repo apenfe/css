@@ -284,7 +284,8 @@ body{
 
 .content__about,
 .content__resume,
-.content__portfolio{
+.content__portfolio,
+.content__blog{
     height: 100%;
     min-height: 100%;
     overflow: auto;
@@ -295,21 +296,24 @@ body{
 
 .about__header,
 .resume__header,
-.portfolio__header{
+.portfolio__header,
+.blog__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 
 .about__title,
 .resume__title,
-.portfolio__title{
+.portfolio__title,
+.blog__title{
     font-size: 3.2rem;
     position: relative;
 }
 
 .about__title::after,
 .resume__title::after,
-.portfolio__title::after{
+.portfolio__title::after,
+.blog__title::after{
     content: "";
     position: absolute;
     width: 50px;

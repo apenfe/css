@@ -13,6 +13,11 @@
 
     --color-border-reviews: #E5E6E7;
     --color-company: #A5A6A7;
+
+    --color-scrollbar: #D3D3D4;
+    --color-background-crollbar: #eee;
+
+    --color-background-certificate: #F5F5F5;
 }
 
 /* ESTILOS GENERALES */
@@ -312,7 +317,8 @@ body{
     opacity: 0.5;
 }
 
-.title__color{
+.title__color,
+.subtitle__color{
     color: var(--color-secondary) !important;
 }
 
@@ -349,7 +355,7 @@ body{
     margin-right: 0.5rem;
 }
 
-/* ESTILOS COMPARTIDOS ABOUT */
+/* ESTILOS GENERALES (ABOUT Y OTRAS SECCIONES) */
 
 .about__services,
 .about__reviews,
@@ -364,7 +370,8 @@ body{
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header{
+.extra__header,
+.resume__subheader{
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
@@ -375,7 +382,8 @@ body{
 .reviews__title,
 .clients__title,
 .prices__title,
-.extra__title{
+.extra__title,
+.resume__subtitle{
     font-size: 2.1rem;
 }
 
@@ -383,7 +391,8 @@ body{
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after{
+.extra__title::after,
+.resume__subtitle::after{
     content: "";
     position: absolute;
     width: 30px;
@@ -660,4 +669,230 @@ body{
     margin: 1.5rem 1rem;
     margin-bottom: 0;
     color: var(--color-subtitle);
+}
+
+/* ESTILOS PARA CURRICULUM */
+
+.resume__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* CV PARTE IZQUIERDA */
+
+.resume__left{
+    flex-basis: 58%;
+    margin-right: 1.5rem;
+}
+
+.resume__timelines{
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline__header{
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.timeline__year{
+    margin: 0.3rem 0px;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.timeline__company{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: var(--color-company);
+}
+
+.timeline__description{
+    flex-basis: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.timeline__title{
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline__text{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.timeline__divider{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: -18px;
+    width: 1px;
+    background-color: var(--color-background-crollbar);
+}
+
+.timeline__divider::before{
+    content: "";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timeline__divider::after{
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color-principal);
+    border-radius: 10rem;
+    border: 2px solid var(--color-secondary);
+    opacity: 1;
+}
+
+/* CV PARTE DERECHA */
+
+.resume__right{
+    flex-basis: 41%;
+    padding: 0 1.5rem;
+}
+
+.resume__skills{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.skills__text{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills__number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills__progressbar{
+    height: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    background-color: var(--color-principal);
+    margin-bottom: 1.5rem;
+    padding: 0.2rem;
+    position: relative;
+}
+
+.skills__percentage{
+    position: absolute;
+    width: 40%;
+    height: 0.8rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-principal);
+    border-radius: 1rem;
+    top: 0px;
+}
+
+.skills__percentage--p1{ width: 90%; }
+.skills__percentage--p2{ width: 60%; }
+.skills__percentage--p3{ width: 60%; }
+.skills__percentage--p4{ width: 80%; }
+.skills__percentage--p5{ width: 90%; }
+.skills__percentage--p6{ width: 60%; }
+.skills__percentage--p7{ width: 60%; }
+.skills__percentage--p8{ width: 85%; }
+
+.knowledges__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledges__option{
+    font-size: 1.4rem;
+    padding: 0.1rem 1rem;
+    margin: 0.3rem 0.3rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+}
+
+/* CV CERTIFICADOS */
+
+.certificates__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.certificates__certificate{
+    flex-basis: calc(50% - 1.5rem);
+    border: 2px solid var(--color-border-reviews);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.certificate__logo{
+    width: 15rem;
+    height: 100%;
+    background-color: var(--color-background-certificate);
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.certificate__image{
+    width: 100%;
+}
+
+.certificate__content{
+    padding: 2rem 2.5rem;
+}
+
+.certificate__title{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.certificate__id{
+    display: block;
+    font-size: 1.3;
+    color: var(--color-subtitle);
+    margin-bottom: 0.3rem;
+}
+
+.certificate__date{
+    font-size: 1.2rem;
+    color: var(--color-subtitle);
+    opacity: 0.9;
 }

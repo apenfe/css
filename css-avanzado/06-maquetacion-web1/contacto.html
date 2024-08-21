@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--ESTILOS-->
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css"/>
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link rel="stylesheet" href="./assets/css/scroll.css"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
+
+        <title>APENFE | DEVELOPER</title>
+
+    </head>
+
+    <body>
+        
+        <!-- Layout principal --> 
+        <div class="layout">
+
+            <!-- Barra lateral (info usuario) -->
+            <aside class="layout__aside">
+
+                <section class="aside__user-info">
+
+                    <!-- Informacion general usuario -->
+
+                    <div class="user-info__general">
+
+                        <div class="user-info__container-image">
+
+                            <img src="./assets/img/perfilsinfondo.png" class="user-info__image" alt="foto de perfil">
+                            <!-- AQUI IRIA LA SOMBRA -->
+                        </div>
+
+                        <h2 class="user-info__name">Adrián Peñalver</h2>
+                        <h4 class="user-info__job">Desarrollador WEB</h4>
+
+                    </div>
+
+                    <!-- Menu de navegacion -->
+                    <nav class="layout__menu">
+
+                        <ul class="menu__list">
+
+                            <li class="menu__option">
+                                <a href="index.html" class="menu__link">
+                                    <i class="fa-solid fa-house menu__icon"></i>
+                                    <span class="menu__overlay">Home</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="sobre-mi.html" class="menu__link">
+                                    <i class="fa-solid fa-user menu__icon"></i>
+                                    <span class="menu__overlay">Sobre mi</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="estudios.html" class="menu__link">
+                                    <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                    <span class="menu__overlay">Curriculum</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="portafolio.html" class="menu__link">
+                                    <i class="fa-solid fa-briefcase menu__icon"></i>
+                                    <span class="menu__overlay">Portafolio</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="blog.html" class="menu__link">
+                                    <i class="fa-solid fa-book menu__icon"></i>
+                                    <span class="menu__overlay">Blog</span>
+                                </a>
+                            </li>
+                            <li class="menu__option">
+                                <a href="contacto.html" class="menu__link menu__link--active">
+                                    <i class="fa-solid fa-envelope menu__icon"></i>
+                                    <span class="menu__overlay">Contacto</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <!-- Links a redes sociales -->
+                    <div class="user-info__links">
+
+                        <ul class="links__social">
+
+                            <li class="social__option">
+                                <a href="https://www.youtube.com/@apenfe" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-youtube social__icon"></i>
+                                </a>
+                            </li>
+                            <li class="social__option">
+                                <a href="https://www.linkedin.com/in/adrian-penalver/" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-linkedin social__icon"></i>
+                                </a>
+                            </li>
+                            <li class="social__option">
+                                <a href="https://github.com/apenfe" class="social__link" target="_blank">
+                                    <i class="fa-brands fa-github social__icon"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Boton del CV -->
+                    <div class="user-info__buttons">
+                        <a href="#" class="user-info__btn">Descargar CV</a>
+                    </div>
+
+                    <!-- Pie de página -->
+                    <footer class="user-info__footer">
+                        &copy; 2024 Adrián Peñalver
+                    </footer>
+
+                </section>
+
+            </aside>
+
+            <!-- Contenido principal -->
+            <main class="layout__content">
+
+                <section class="content__page content__contact">
+                    <!-- Este es el contenido que cambiara -->
+
+                    <header class="contact__header">
+
+                        <h1 class="contact__title">Contacto</h1>
+
+                    </header>
+
+                    <div class="contact__container">
+
+                        <section class="contact__info">
+
+                            <div class="contact__data">
+                                <i class="fa-solid fa-location-dot contact__icon"></i>
+                                <h2 class="contcat__subtitle">Madrid</h2>
+                            </div>
+
+                            <div class="contact__data">
+                                <i class="fa-solid fa-phone contact__icon"></i>
+                                <h2 class="contcat__subtitle">652346789</h2>
+                            </div>
+
+                            <div class="contact__data">
+                                <i class="fa-solid fa-envelope contact__icon"></i>
+                                <h2 class="contcat__subtitle">a@esd.es</h2>
+                            </div>
+
+                            <div class="contact__data">
+                                <i class="fa-solid fa-circle-check contact__icon"></i>
+                                <h2 class="contcat__subtitle">Desarrollador WEB</h2>
+                            </div>
+
+                        </section>
+
+                        <section class="contact__form-box">
+
+                            <div class="contact__map">
+                         <!--     <iframe frameborder="0" 
+                                scrollin="no" 
+                                marginheight="0"
+                                marginwidth="0"
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47826752331!2d-3.8443489207007677!3d40.43809861120072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1724222004933!5m2!1ses!2ses"></iframe> -->
+                            </div>
+
+                            <header class="contact__form-header">
+
+                                <h3 class="contact__subtitle">¿Como puedo <span class="title__color">ayudarte?</span></h3>
+
+                            </header>
+
+                            <form class="contact__form">
+
+                                <div class="form__container">
+
+                                    <section class="form__left">
+
+                                        <div class="form__group">
+                                            <input type="text" class="form__input" name="name" required placeholder="Nombre">
+                                            <label for="name" class="form__label">Nombre</label>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <input type="email" class="form__input" name="email" required placeholder="Email">
+                                            <label for="email" class="form__label">Email</label>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <input type="text" class="form__input" name="subject" required placeholder="Asunto">
+                                            <label for="subject" class="form__label">Asunto</label>
+                                        </div>
+
+                                    </section>
+
+                                    <section class="form__right">
+
+                                        <div class="form__group">
+                                            <textarea class="form__input form__input--textarea" name="message" required placeholder="Mensaje"></textarea>
+                                            <label for="message" class="form__label">Mensaje</label>
+                                        </div>
+                                        
+                                    </section>
+
+                                    <input type="submit" class="form__button" value="Enviar mensaje">
+
+                                </div>
+
+                            </form>
+
+                        </section>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

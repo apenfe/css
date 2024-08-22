@@ -70,6 +70,7 @@
     }
 
     .layout__menu-toggle{
+        z-index: 999;
         display: block;
         position: absolute;
         width: 4.8rem;
@@ -83,15 +84,111 @@
         color: var(--color-principal);
         border-radius: 3rem;
         cursor: pointer;
-        transition: all 500ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    .menu-toggle__icon{
+        color: var(--color-principal);
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 28%;
+        text-align: center;
+        transition: all 300ms ease-in-out;
     }
 
     .fa-xmark{
-        display: none;
+        opacity: 0;
+    }
+
+    .fa-bars{
+        opacity: 1;
     }
 
     .layout__aside{
+        display: block;
+        position: absolute;
+        border-radius: 0;
+        z-index: 4;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        overflow: auto;
+        transition: all 400ms ease-in-out;
+        margin-right: -100%;
+        opacity: 0;
+    }
+
+    .layout__aside--visible{
+        width: 100%;
+        margin-right: 0;
+        opacity: 1;
+    }
+
+    .layout__aside--hidden{
+        margin-right: -100%;
+        opacity: 0;
+    }
+
+    .user-info__container-image{
+        width: 13rem;
+        margin-top: 3rem;
+        display: inline-block;
+    }
+
+    .user-info__name{
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .layout__menu{
+        position: static;
+        margin: 3rem 0;
+    }
+
+    .menu__list{
+        position: static;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: none;
+        margin-left: 0;
+        padding: 0;
+        min-height: auto;
+    }
+
+    .menu__link{
+        text-decoration: none;
+        display: block;
+        padding: 1.2rem 0;
+    }
+
+    .menu__icon{
         display: none;
+    }
+
+    .menu__overlay{
+        position: static;
+        opacity: 0.7;
+        margin-top: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 1.6rem;
+    }
+
+    .menu__link--active .menu__overlay{
+        opacity: 1;
+    }
+
+    .links__social{
+        margin-top: 0;
+    }
+
+    .user-info__footer{
+        position: static;
+        padding-bottom: 2rem;
     }
 
     .layout__content{
@@ -104,10 +201,6 @@
     .content__page{
         border-radius: 0;
         height: 100vh;
-    }
-
-    .layout__menu{
-        position: static;
     }
  
 }

@@ -1,0 +1,43 @@
+
+.caja{
+    border: 2px solid red;
+    background: linear-gradient(to bottom left, yellow 60%, red);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: calc(300px / 2);
+    height: calc(300px + 50px);
+
+    /* min(24, 50, 130, calc(23 + 3)) */
+    /* clamp(24 min, 50 normal, 130 maximo) */
+}
+
+img{
+    clip-path: circle(15%);
+    /* polygon(60% 0, 100% 50%, 50% 100%, 0 60%) */
+    /* ellipse(100px 130px) */
+}
+
+.caja2{
+    border: 2px solid red;
+    background: radial-gradient(circle 300px, orange, red, lightblue 80%);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: calc(600px / 2);
+    height: calc(300px + 50px);
+
+    /* min(24, 50, 130, calc(23 + 3)) */
+    /* clamp(24 min, 50 normal, 130 maximo) */
+}
+
+.img2{
+    width: 550px;
+    height: 550px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px gray;
+
+    transform: scale(2) translateX(50%);
+}

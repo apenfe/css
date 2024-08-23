@@ -894,6 +894,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .certificate__image{
@@ -907,6 +908,7 @@ body{
 .certificate__title{
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .certificate__id{

@@ -67,6 +67,7 @@
         border-radius: 0;
         grid-template-areas: "content";
         grid-template-columns: 100%;
+        overflow-x: hidden;
     }
 
     .layout__menu-toggle{
@@ -110,7 +111,7 @@
         position: absolute;
         border-radius: 0;
         z-index: 4;
-        max-width: 330px;
+        max-width: 33rem;
         top: 0;
         right: 0;
         bottom: 0;
@@ -287,7 +288,7 @@
         position: absolute;
         top: 0;
         left: 16%;
-        bottom: -18px;
+        bottom: -1.8rem;
         width: 1px;
         background-color: var(--color-background-crollbar);
     }

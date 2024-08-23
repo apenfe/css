@@ -346,17 +346,18 @@ body{
 }
 
 .personal-info__bio{
-    flex-basis: 56%;
+    flex-basis: 65%;
 }
 
 .personal-info__data{
-    flex-basis: 44%;
+    flex-basis: 35%;
     padding: 0 1.5rem;
 }
 
 .personal-info__description{
     font-size: 1.5rem;
     line-height: 2.4rem;
+    text-align: justify;
 }
 
 .personal-info__option{
@@ -729,9 +730,16 @@ body{
 
 .timeline__company{
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: lighter;
     color: var(--color-company);
+}
+
+.timeline__years{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: var(--color-titles);
 }
 
 .timeline__description{

@@ -252,6 +252,7 @@ body {
     right: -10.5rem;
     background-color: var(--color-transparent);
     min-width: 11rem;
+    z-index: 4;
 }
 
 .menu__list {

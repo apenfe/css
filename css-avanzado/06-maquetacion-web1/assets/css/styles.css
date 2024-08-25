@@ -1,5 +1,5 @@
 /* DEFINICION DE VARIABLES */
-:root{
+:root {
     --color-principal: #FFFFFF;
     --color-secondary: #04B4E0;
 
@@ -23,12 +23,13 @@
 
 /* ESTILOS GENERALES */
 
-html{
-    font-size: 62.5%; /* Equivalente a 10px Accesibilidad */
+html {
+    font-size: 62.5%;
+    /* Equivalente a 10px Accesibilidad */
     overflow: hidden !important;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     font-family: Poppins, Helvetica, sans-serif;
@@ -38,12 +39,17 @@ body{
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-titles);
 }
 
 /* IMAGEN DE FONFO */
-body{
+body {
     background-image: url("../img/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,26 +58,28 @@ body{
 
 /* ESTRUCTURA PRINCIPAL */
 
-.layout{
+.layout {
     position: relative;
     min-width: 1290px;
-    width: 75%;
-    height: 80vh;
+    width: 85%;
+    /* 75 80*/
+    height: 85vh;
     min-height: 80vh;
     margin: 10vh auto;
 
     display: grid;
     grid-template-areas: "aside content";
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
+    /* 20 70*/
 
     /* Sobra del layout */
     border-radius: 4rem;
-    box-shadow: 0 0 100px -5px rgba(0,0,0,0.25);
+    box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
 }
 
 /* BARRA LATERAL AZUL */
 
-.layout__aside{
+.layout__aside {
     grid-area: aside;
 
     border-radius: 4rem 0 0 4rem;
@@ -79,7 +87,7 @@ body{
     overflow-x: hidden;
 }
 
-.aside__user-info{
+.aside__user-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +100,7 @@ body{
     color: var(--color-principal);
 }
 
-.user-info__container-image{
+.user-info__container-image {
     position: relative;
     display: inline-block;
     width: 18rem;
@@ -100,7 +108,7 @@ body{
     z-index: 1;
 }
 
-.user-info__image{
+.user-info__image {
     width: 100%;
     background-color: var(--color-principal);
     border: 0.3rem solid var(--color-principal);
@@ -121,7 +129,7 @@ body{
     opacity: 0.4;
 }
 
-.user-info__name{
+.user-info__name {
     color: var(--color-principal);
     font-size: 3.2rem;
     text-align: center;
@@ -129,25 +137,25 @@ body{
     margin-top: 2.6rem;
 }
 
-.user-info__job{
+.user-info__job {
     font-size: 1.7rem;
     font-weight: 200;
     color: var(--color-principal);
 
 }
 
-.user-info__links{
+.user-info__links {
     margin-bottom: 3.6rem;
 }
 
-.links__social{
+.links__social {
     text-align: center;
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
 }
 
-.social__option{
+.social__option {
     height: 3rem;
     width: 3rem;
     font-size: 1.8rem;
@@ -157,18 +165,18 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.social__option:hover{
+.social__option:hover {
     height: 3rem;
     background-color: rgba(255, 255, 255, 0.2);
-  
+
 }
 
-.user-info__buttons{
+.user-info__buttons {
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
-.user-info__btn{
+.user-info__btn {
     border: 2px solid var(--color-principal);
     padding: 3rem;
     padding-bottom: 1.3rem;
@@ -179,12 +187,12 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.user-info__btn:hover{
+.user-info__btn:hover {
     background-color: var(--color-principal);
     color: var(--color-secondary);
 }
 
-.user-info__footer{
+.user-info__footer {
     position: absolute;
     bottom: 2rem;
     font-size: 1.2rem;
@@ -192,7 +200,8 @@ body{
 
 /* CONTENEDOR PRINCIPAL */
 
-.layout__content{
+.layout__content {
+
     grid-area: content;
     background-color: var(--color-secondary);
     border-radius: 0 10rem 10rem 0;
@@ -200,7 +209,8 @@ body{
     min-height: 100%;
 }
 
-.content__page{
+.content__page {
+    position: relative;
     min-height: 100%;
     background-color: var(--color-principal);
     border-radius: 3.2rem;
@@ -209,21 +219,33 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.page__name{
+.page__name {
     font-size: 6rem;
     margin-bottom: 1rem;
 }
 
-.page__job{
+.page__job {
     font-size: 2.1rem;
     font-weight: lighter;
     color: var(--color-subtitle);
 }
 
+.page__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.1;
+}
+
 /* MENU NAVEGACION LATERAL */
-.layout__menu{
+.layout__menu {
     display: block;
     position: absolute;
     top: 0;
@@ -232,7 +254,7 @@ body{
     min-width: 11rem;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -247,7 +269,7 @@ body{
     margin-left: 2.5rem;
 }
 
-.menu__option{
+.menu__option {
     display: block;
     width: 100%;
     text-align: center;
@@ -255,16 +277,16 @@ body{
 }
 
 .menu__option:hover .menu__icon,
-.menu__link--active .menu__icon{
+.menu__link--active .menu__icon {
     color: var(--color-secondary);
 }
 
-.menu__icon{
+.menu__icon {
     color: var(--color-icon);
     font-size: 2.8rem;
 }
 
-.menu__overlay{
+.menu__overlay {
     position: absolute;
     right: 0px;
     margin-top: -3rem;
@@ -277,7 +299,7 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.menu__option:hover .menu__overlay{
+.menu__option:hover .menu__overlay {
     opacity: 1;
     right: 100%;
 }
@@ -288,7 +310,7 @@ body{
 .content__resume,
 .content__portfolio,
 .content__blog,
-.content__contact{
+.content__contact {
     height: 100%;
     min-height: 100%;
     overflow: auto;
@@ -301,7 +323,7 @@ body{
 .resume__header,
 .portfolio__header,
 .blog__header,
-.contact__header{
+.contact__header {
     display: inline-block;
     margin-bottom: 4.5rem;
 }
@@ -310,7 +332,7 @@ body{
 .resume__title,
 .portfolio__title,
 .blog__title,
-.contact__title{
+.contact__title {
     font-size: 3.2rem;
     position: relative;
 }
@@ -319,7 +341,7 @@ body{
 .resume__title::after,
 .portfolio__title::after,
 .blog__title::after,
-.contact__title::after{
+.contact__title::after {
     content: "";
     position: absolute;
     width: 5rem;
@@ -332,39 +354,39 @@ body{
 }
 
 .title__color,
-.subtitle__color{
+.subtitle__color {
     color: var(--color-secondary) !important;
 }
 
 /* INFORMACION PERSONAL */
 
-.about__personal-info{
+.about__personal-info {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
 }
 
-.personal-info__bio{
-    flex-basis: 65%;
+.personal-info__bio {
+    flex-basis: 70%;
 }
 
-.personal-info__data{
-    flex-basis: 35%;
-    padding: 0 1.5rem;
+.personal-info__data {
+    flex-basis: 30%;
+    padding: 0 4.5rem;
 }
 
-.personal-info__description{
+.personal-info__description {
     font-size: 1.5rem;
     line-height: 2.4rem;
     text-align: justify;
 }
 
-.personal-info__option{
+.personal-info__option {
     margin-bottom: 1rem;
 }
 
-.personal-info__title{
+.personal-info__title {
     color: var(--color-secondary);
     font-weight: 600;
     margin-right: 0.5rem;
@@ -376,7 +398,7 @@ body{
 .about__reviews,
 .about__clients,
 .about__prices,
-.about__extra{
+.about__extra {
     width: 100%;
     margin-bottom: 3rem;
 }
@@ -387,7 +409,7 @@ body{
 .prices__header,
 .extra__header,
 .resume__subheader,
-.contact__form-header{
+.contact__form-header {
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
@@ -400,7 +422,7 @@ body{
 .prices__title,
 .extra__title,
 .resume__subtitle,
-.form-header__title{
+.form-header__title {
     font-size: 2.1rem;
 }
 
@@ -410,7 +432,7 @@ body{
 .prices__title::after,
 .extra__title::after,
 .resume__subtitle::after,
-.form-header__title::after{
+.form-header__title::after {
     content: "";
     position: absolute;
     width: 3rem;
@@ -424,44 +446,44 @@ body{
 
 /* SERVICIOS OFRECIDOS */
 
-.services__container{
+.services__container {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.services__service{
+.services__service {
     flex-basis: calc(50% - 3rem);
     margin-right: 3rem;
     margin-bottom: 2.5rem;
 }
 
-.service__real-icon{
+.service__real-icon {
     color: var(--color-secondary);
     font-size: 3.8rem;
 }
 
-.service__title{
+.service__title {
     font-size: 1.8rem;
     margin: 0.5rem 0;
 }
 
-.service__description{
+.service__description {
     font-size: 1.5rem;
     text-align: justify;
 }
 
 /* REVIEWS */
 
-.reviews__container{
+.reviews__container {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.reviews__review{
+.reviews__review {
     flex-basis: calc(50% - 2.5rem);
     border: 2px solid var(--color-border-reviews);
     border-radius: 2rem;
@@ -474,11 +496,11 @@ body{
     margin-bottom: 1rem;
 }
 
-.review__image-container{
+.review__image-container {
     width: 100%;
 }
 
-.review__image{
+.review__image {
     max-width: 9rem;
     max-height: 9rem;
     border-radius: 9rem;
@@ -488,35 +510,35 @@ body{
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.35);
 }
 
-.review__description{
+.review__description {
     margin-bottom: 1rem;
 }
 
-.review__text{
+.review__text {
     font-size: 1.5rem;
     line-height: 2.4rem;
     text-align: justify;
 }
 
-.review__author{
+.review__author {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.review__name{
+.review__name {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
-.review__company{
+.review__company {
     color: var(--color-company);
     font-weight: 300;
     font-size: 1.3rem;
 }
 
-.review__icon{
+.review__icon {
     font-size: 4rem;
     opacity: 0.5;
     color: var(--color-secondary);
@@ -524,33 +546,33 @@ body{
 
 /* CLIENTES */
 
-.about__clients{
+.about__clients {
     width: 100%;
     margin-bottom: 2rem;
 }
 
-.clients__header{
+.clients__header {
     margin-bottom: 3rem;
 }
 
-.clients__container{
+.clients__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.clients__link{
+.clients__link {
     display: block;
     width: 100%;
     opacity: 0.7;
     transition: all 300ms linear;
 }
 
-.clients__link:hover{
+.clients__link:hover {
     opacity: 1;
 }
 
-.clients__image{
+.clients__image {
     width: 14.5px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -558,13 +580,13 @@ body{
 
 /* SECCION DE PRECIOS */
 
-.prices__container{
+.prices__container {
     margin-bottom: 5rem;
     display: flex;
     flex-direction: row;
 }
 
-.prices__box{
+.prices__box {
     flex-basis: 50%;
     height: 100%;
     border: 2px solid var(--color-border-reviews);
@@ -576,25 +598,25 @@ body{
 }
 
 .prices__box:hover,
-.extra__info:hover{
+.extra__info:hover {
     box-shadow: 0 18px 24px -5px rgba(0, 0, 0, 0.15);
     transform: translateY(-1rem);
 }
 
-.prices__box:last-of-type{
+.prices__box:last-of-type {
     margin-right: 0rem;
 }
 
-.prices__subtitle{
+.prices__subtitle {
     margin-bottom: 3rem;
 }
 
-.prices__text{
+.prices__text {
     position: relative;
     display: inline-block;
 }
 
-.prices__box:hover .prices__text::after{
+.prices__box:hover .prices__text::after {
     content: "";
     position: absolute;
     left: 0;
@@ -604,28 +626,28 @@ body{
     background-color: var(--color-secondary);
 }
 
-.prices__price{
+.prices__price {
     padding-bottom: 1rem;
 }
 
-.prices__number{
+.prices__number {
     display: block;
     font-size: 4.2rem;
     line-height: 1;
     color: var(--color-titles);
 }
 
-.prices__advice{
+.prices__advice {
     display: block;
     color: var(--color-subtitle);
 }
 
-.prices__buy{
+.prices__buy {
     padding-top: 2.5rem;
     padding-bottom: 3rem;
 }
 
-.prices__btn{
+.prices__btn {
     display: inline-block;
     padding: 1.2rem 3.1rem;
     border: 2px solid var(--color-border-reviews);
@@ -634,20 +656,20 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.prices__btn:hover{
+.prices__btn:hover {
     background-color: var(--color-secondary);
     color: var(--color-principal);
     border: 2px solid var(--color-secondary);
 }
 
-.prices__reward{
+.prices__reward {
     font-size: 1.4rem;
     padding: 0.6rem 0;
 }
 
 /* INFORMACION EXTRA */
 
-.extra__container{
+.extra__container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -656,7 +678,7 @@ body{
     margin-bottom: 1.5rem;
 }
 
-.extra__info{
+.extra__info {
     flex-basis: 30%;
     border: 2px solid var(--color-border-reviews);
     text-align: center;
@@ -665,22 +687,22 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.extra__info:hover{
+.extra__info:hover {
     transform: translateY(-5px);
 }
 
-.extra__icon{
+.extra__icon {
     font-size: 3.3rem;
     color: var(--color-secondary);
     margin-bottom: 1rem;
 }
 
-.extra__subtitle{
+.extra__subtitle {
     font-size: 1.5rem;
     margin: 1.5rem;
 }
 
-.extra__quantity{
+.extra__quantity {
     display: block;
     font-size: 3.6rem;
     line-height: 5rem;
@@ -691,7 +713,7 @@ body{
 
 /* ESTILOS PARA CURRICULUM */
 
-.resume__container{
+.resume__container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -699,16 +721,16 @@ body{
 
 /* CV PARTE IZQUIERDA */
 
-.resume__left{
+.resume__left {
     flex-basis: 58%;
     margin-right: 1.5rem;
 }
 
-.resume__timelines{
+.resume__timelines {
     margin-bottom: 5rem;
 }
 
-.timelines__timeline{
+.timelines__timeline {
     position: relative;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -716,49 +738,49 @@ body{
     flex-direction: row;
 }
 
-.timeline__header{
+.timeline__header {
     flex-basis: 30%;
     text-align: right;
     padding-right: 2.5rem;
 }
 
-.timeline__year{
+.timeline__year {
     margin: 0.3rem 0;
     line-height: 1.9rem;
     font-size: 1.4rem;
 }
 
-.timeline__company{
+.timeline__company {
     display: block;
     font-size: 1.4rem;
     font-weight: lighter;
     color: var(--color-company);
 }
 
-.timeline__years{
+.timeline__years {
     display: block;
     font-size: 1.3rem;
     font-weight: lighter;
     color: var(--color-titles);
 }
 
-.timeline__description{
+.timeline__description {
     flex-basis: 70%;
     padding-left: 2.5rem;
     padding-right: 1.5rem;
 }
 
-.timeline__title{
+.timeline__title {
     font-size: 1.6rem;
     margin-bottom: 0.3rem;
 }
 
-.timeline__text{
+.timeline__text {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.timeline__divider{
+.timeline__divider {
     position: absolute;
     top: 0;
     left: 30%;
@@ -767,7 +789,7 @@ body{
     background-color: var(--color-background-crollbar);
 }
 
-.timeline__divider::before{
+.timeline__divider::before {
     content: "";
     position: absolute;
     margin-top: 0.4rem;
@@ -779,7 +801,7 @@ body{
     opacity: 0.25;
 }
 
-.timeline__divider::after{
+.timeline__divider::after {
     content: "";
     position: absolute;
     margin-top: 0.8rem;
@@ -794,37 +816,37 @@ body{
 
 /* CV PARTE DERECHA */
 
-.resume__right{
+.resume__right {
     flex-basis: 41%;
     padding: 0 1.5rem;
 }
 
-.resume__skills{
+.resume__skills {
     width: 100%;
     margin-bottom: 3rem;
 }
 
-.skills__title{
+.skills__title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.2rem;
     margin-top: 0.2rem;
 }
 
-.skills__text{
+.skills__text {
     font-size: 1.3rem;
     line-height: 1.4rem;
     margin-bottom: 0.4rem;
 }
 
-.skills__number{
+.skills__number {
     font-size: 1.1rem;
     line-height: 1.4rem;
     margin-bottom: 0.4rem;
     color: var(--color-subtitle);
 }
 
-.skills__progressbar{
+.skills__progressbar {
     height: 1rem;
     border: 1px solid var(--color-secondary);
     border-radius: 1rem;
@@ -834,7 +856,7 @@ body{
     position: relative;
 }
 
-.skills__percentage{
+.skills__percentage {
     position: absolute;
     width: 40%;
     height: 0.8rem;
@@ -844,22 +866,93 @@ body{
     top: 0;
 }
 
-.skills__percentage--p1{ width: 90%; }
-.skills__percentage--p2{ width: 60%; }
-.skills__percentage--p3{ width: 60%; }
-.skills__percentage--p4{ width: 80%; }
-.skills__percentage--p5{ width: 90%; }
-.skills__percentage--p6{ width: 60%; }
-.skills__percentage--p7{ width: 60%; }
-.skills__percentage--p8{ width: 85%; }
+.skills__percentage--p5 {
+    width: 5%;
+}
 
-.knowledges__list{
+.skills__percentage--p10 {
+    width: 10%;
+}
+
+.skills__percentage--p15 {
+    width: 10%;
+}
+
+.skills__percentage--p20 {
+    width: 20%;
+}
+
+.skills__percentage--p25 {
+    width: 25%;
+}
+
+.skills__percentage--p30 {
+    width: 30%;
+}
+
+.skills__percentage--p35 {
+    width: 35%;
+}
+
+.skills__percentage--p40 {
+    width: 40%;
+}
+
+.skills__percentage--p45 {
+    width: 45%;
+}
+
+.skills__percentage--p50 {
+    width: 50%;
+}
+
+.skills__percentage--p55 {
+    width: 55%;
+}
+
+.skills__percentage--p60 {
+    width: 60%;
+}
+
+.skills__percentage--p65 {
+    width: 65%;
+}
+
+.skills__percentage--p70 {
+    width: 70%;
+}
+
+.skills__percentage--p75 {
+    width: 75%;
+}
+
+.skills__percentage--p80 {
+    width: 80%;
+}
+
+.skills__percentage--p85 {
+    width: 85%;
+}
+
+.skills__percentage--p90 {
+    width: 90%;
+}
+
+.skills__percentage--p95 {
+    width: 95%;
+}
+
+.skills__percentage--p100 {
+    width: 100%;
+}
+
+.knowledges__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.knowledges__option{
+.knowledges__option {
     font-size: 1.4rem;
     padding: 0.1rem 1rem;
     margin: 0.3rem 0.3rem;
@@ -870,14 +963,14 @@ body{
 
 /* CV CERTIFICADOS */
 
-.certificates__container{
+.certificates__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
-.certificates__certificate{
+.certificates__certificate {
     flex-basis: calc(50% - 1.5rem);
     border: 2px solid var(--color-border-reviews);
     border-radius: 0.8rem;
@@ -885,7 +978,7 @@ body{
     flex-direction: row;
 }
 
-.certificate__logo{
+.certificate__logo {
     width: 15rem;
     height: 100%;
     background-color: var(--color-background-certificate);
@@ -897,28 +990,28 @@ body{
     cursor: pointer;
 }
 
-.certificate__image{
+.certificate__image {
     width: 100%;
 }
 
-.certificate__content{
+.certificate__content {
     padding: 2rem 2.5rem;
 }
 
-.certificate__title{
+.certificate__title {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 
-.certificate__id{
+.certificate__id {
     display: block;
     font-size: 1.3;
     color: var(--color-subtitle);
     margin-bottom: 0.3rem;
 }
 
-.certificate__date{
+.certificate__date {
     font-size: 1.2rem;
     color: var(--color-subtitle);
     opacity: 0.9;
@@ -926,67 +1019,69 @@ body{
 
 /* PORTFOLIO */
 
-.portfolio__navbar{
+.portfolio__navbar {
     margin-bottom: 3rem;
 }
 
-.portfolio__menu{
+.portfolio__menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.portfolio__option{
+.portfolio__option {
     font-size: 1.3rem;
     opacity: 0.7;
 }
 
-.portfolio__option--active{
+.portfolio__option--active {
     opacity: 1;
     font-weight: bold;
 }
 
-.portfolio__link{
+.portfolio__link {
     cursor: pointer;
 }
 
-.portfolio__link:hover{
+.portfolio__link:hover {
     color: var(--color-secondary);
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio__gallery{
+.portfolio__gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.gallery__item{
+.gallery__item {
     position: relative;
     flex-basis: 33%;
     padding: 0.7rem;
+    border: 1px solid var(--color-border-reviews);
 }
 
-.gallery__container__image{
+.gallery__container__image {
     overflow: hidden;
 }
 
-.gallery__image{
+.gallery__image {
     transition: all 300ms ease-in-out;
 }
 
-.gallery__item:hover .gallery__image{
+.gallery__item:hover .gallery__image {
     transform: scale(1.1);
 }
 
-.gallery__title{
+.gallery__title {
     font-size: 1.6rem;
     padding: 1.5rem 0;
     font-weight: bold;
 }
 
-.gallery__icon{
+.gallery__icon {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -1002,7 +1097,7 @@ body{
     opacity: 0;
 }
 
-.gallery__category{
+.gallery__category {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
@@ -1014,14 +1109,27 @@ body{
     opacity: 0;
 }
 
+.gallery__stacks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gallery__stack {
+    font-size: 4rem;
+
+}
+
 .gallery__item:hover .gallery__icon,
-.gallery__item:hover .gallery__category{
+.gallery__item:hover .gallery__category {
     opacity: 1;
 }
 
 /* BLOG */
 
-.blog__articles{
+.blog__articles {
     width: 100%;
     margin-bottom: 2.5rem;
     display: flex;
@@ -1029,18 +1137,18 @@ body{
     flex-wrap: wrap;
 }
 
-.articles__article{
+.articles__article {
     flex-basis: 50%;
     padding: 0 1.5rem;
     padding-bottom: 3.5rem;
 }
 
-.article__top{
+.article__top {
     position: relative;
     overflow: hidden;
 }
 
-.article__category{
+.article__category {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -1052,28 +1160,28 @@ body{
     z-index: 3;
 }
 
-.article__mask{
+.article__mask {
     width: 100%;
     height: 18.5rem;
     overflow: hidden;
 }
 
-.article__image{
+.article__image {
     display: block;
     transition: all 300ms ease-in-out;
     z-index: 1;
 }
 
-.article__top:hover .article__image{
+.article__top:hover .article__image {
     transform: scale(1.1);
 }
 
-.article__logo{
+.article__logo {
     transition: all 200ms ease-in-out;
     opacity: 0;
 }
 
-.article__icon{
+.article__icon {
     width: 4.4rem;
     position: absolute;
     top: calc(50% - 2.2rem);
@@ -1083,11 +1191,11 @@ body{
     text-align: center;
 }
 
-.article__top:hover .article__logo{
+.article__top:hover .article__logo {
     opacity: 1;
 }
 
-.article__bottom{
+.article__bottom {
     margin: 0;
     padding: 2.1rem;
     padding-top: 1.5rem;
@@ -1095,7 +1203,7 @@ body{
     border-top: 0;
 }
 
-.article__date{
+.article__date {
     display: block;
     font-size: 1.1rem;
     line-height: 1.2rem;
@@ -1103,24 +1211,24 @@ body{
     color: var(--color-subtitle);
 }
 
-.article__title{
+.article__title {
     font-size: 1.8rem;
     margin-top: 0.5rem;
 }
 
 /* PAGINA DE CONTACTO */
 
-.contact__container{
+.contact__container {
     display: flex;
     flex-direction: row;
 }
 
-.contact__info{
+.contact__info {
     flex-basis: 33%;
     padding: 0 1.5rem;
 }
 
-.contact__data{
+.contact__data {
     width: 100%;
     margin-bottom: 1.5rem;
     padding: 2rem 1rem;
@@ -1129,39 +1237,39 @@ body{
     border: 0.1rem solid var(--color-border-reviews);
 }
 
-.contact__icon{
+.contact__icon {
     font-size: 3.3rem;
     color: var(--color-secondary);
 }
 
-.contact__subtitle{
+.contact__subtitle {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 
-.contact__form-box{
+.contact__form-box {
     flex-basis: 66%;
     padding: 0 1.5rem;
 }
 
 /* FORMULARIO DE CONTACTO */
 
-.form__container{
+.form__container {
     display: flex;
     flex-direction: row;
 }
 
-.form__left{
+.form__left {
     flex-basis: 47%;
     margin-right: 1.5rem;
 }
 
-.form__group{
+.form__group {
     position: relative;
     margin-bottom: 2.5rem;
 }
 
-.form__input{
+.form__input {
     position: relative;
     width: 100%;
     height: 4.2rem;
@@ -1181,11 +1289,11 @@ body{
     z-index: 1;
 }
 
-.form__input:focus{
+.form__input:focus {
     border: 0.2rem solid var(--color-secondary);
 }
 
-.form__label{
+.form__label {
     position: absolute;
     top: 1rem;
     left: 1.5rem;
@@ -1195,7 +1303,7 @@ body{
 }
 
 .form__input:focus~label,
-.form__input:not(:placeholder-shown)~label{
+.form__input:not(:placeholder-shown)~label {
     top: -2rem;
     left: 0;
     z-index: 1;
@@ -1203,31 +1311,31 @@ body{
     color: var(--color-secondary);
 }
 
-.form__input::-webkit-input-placeholder{
+.form__input::-webkit-input-placeholder {
     color: transparent;
 }
 
-.form__input::-moz-placeholder{
+.form__input::-moz-placeholder {
     color: transparent;
 }
 
-.form__right{
+.form__right {
     flex-basis: 50%;
     max-width: 50%;
     max-height: 100%;
 }
 
-.form__group--textarea{
+.form__group--textarea {
     height: 100%;
 }
 
-.form__input--textarea{
+.form__input--textarea {
     display: block;
     resize: none;
     height: 100%;
 }
 
-.form__button{
+.form__button {
     padding: 1rem 3rem;
     font-size: 1.5rem;
     border: 0.2rem solid var(--color-secondary);
@@ -1239,19 +1347,19 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.form__button:hover{
+.form__button:hover {
     background-color: var(--color-secondary);
     color: var(--color-principal);
 }
 
-.contact__map{
+.contact__map {
     width: 100%;
     min-height: 15rem;
     margin-bottom: 3.5rem;
     overflow: hidden;
 }
 
-.contact__iframe{
+.contact__iframe {
     width: 100%;
     height: 14rem;
 }

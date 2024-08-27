@@ -1,4 +1,4 @@
-/* VARIABLES */
+/*! VARIABLES */
 :root {
     --color-text-body: #525260;
     --color-primary: #5955E8;
@@ -6,9 +6,11 @@
     --color-banner: #2623BA;
     --color-text-btn: #0d6efd;
     --color-bg-btn: #ffdc60;
+    --color-subtitle: #C75c6F;
+    --color-title: #292930;
 }
 
-/* ESTILOS GENERALES */
+/*! ESTILOS GENERALES */
 html {
     font-size: 10px;
     overflow-x: hidden;
@@ -24,14 +26,14 @@ body {
     line-height: 1.5;
 }
 
-/* ESTRUCTURA */
+/*! ESTRUCTURA */
 .layout {
     width: 100%;
     min-width: 1200px;
     height: 100%;
 }
 
-/* ESTILOS MENU NAVEGACION Y CABECERA WEB */
+/*! ESTILOS MENU NAVEGACION Y CABECERA WEB */
 .layout__menu {
     width: 100%;
     padding: 3.5rem 3rem;
@@ -184,7 +186,7 @@ body {
     width: 100%;
 }
 
-/* Estilos para el banner */
+/*! Estilos para el banner */
 .layout__banner {
     position: relative;
     min-height: 60rem;
@@ -463,4 +465,35 @@ body {
         -ms-transform: translateY(0%);
         -o-transform: translateY(0%);
     }
+}
+
+/*! ESTILOS SECCION SERVICIOS */
+.layout__services {
+    position: relative;
+    z-index: 1;
+    margin: 5rem 4rem;
+}
+
+.services__grid {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.services__header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.services__subtitle {
+    color: var(--color-subtitle);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.services__title {
+    color: var(--color-title);
+    font-size: 6.7rem;
+    line-height: 1.2;
+    font-weight: 500;
 }

@@ -1,0 +1,24 @@
+@media (min-width: 1600px) {
+    .layout {
+        min-height: 1600px;
+    }
+
+    .layout__menu {
+        padding: 5rem 9.5rem;
+    }
+
+    .layout__banner {
+        min-height: 85rem;
+        margin: 0 9.5rem;
+        padding-right: 0;
+        padding-left: 20rem;
+        padding-top: 25rem;
+        padding-bottom: 30rem;
+    }
+
+    .services__service {
+        padding: 7rem 5rem;
+    }
+}
+
+@media (max-width: 1507px) {}

@@ -142,4 +142,48 @@
     .banner__content {
         width: 65%;
     }
+
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container {
+        max-width: 72rem;
+    }
+
+    .services__subtitle,
+    .projects__subtitle,
+    .stats__subtitle,
+    .reviews__subtitle,
+    .clients__subtitle,
+    .news__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .services__title,
+    .projects__title,
+    .stats__title,
+    .reviews__title,
+    .news__title {
+        font-size: 5rem;
+    }
+
+    .services__list {
+        flex-direction: column;
+    }
+
+    .services__service {
+        width: 95%;
+        margin-bottom: 1rem;
+        padding: 4rem 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .service-shapes--shape2 {
+        display: none;
+    }
+
+    .services__service:last-child {
+        margin-bottom: 5rem;
+    }
+
 }

@@ -155,7 +155,8 @@
     .stats__subtitle,
     .reviews__subtitle,
     .clients__subtitle,
-    .news__subtitle {
+    .news__subtitle,
+    .contact__subtitle {
         font-size: 1.8rem;
     }
 
@@ -163,7 +164,8 @@
     .projects__title,
     .stats__title,
     .reviews__title,
-    .news__title {
+    .news__title,
+    .contact__title {
         font-size: 5rem;
     }
 
@@ -184,6 +186,146 @@
 
     .services__service:last-child {
         margin-bottom: 5rem;
+    }
+
+    .layout__projects {
+        padding: 8rem 4rem;
+    }
+
+    .project-shapes--shape2 {
+        display: none;
+    }
+
+    .layout__stats,
+    .layout__clients {
+        padding: 8rem 5rem;
+    }
+
+    .stats__description,
+    .clients__description {
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+    .stats__progress {
+        flex-wrap: wrap;
+    }
+
+    .stats__stat {
+        width: calc(50% - 1.5rem);
+    }
+
+    .layout__reviews {
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+
+    .reviews__description,
+    .news__description {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .reviews__container {
+        flex-direction: column;
+    }
+
+    .clients__title {
+        width: 100%;
+        font-size: 5rem;
+    }
+
+    .clients__logos {
+        flex-wrap: wrap;
+    }
+
+    .clients__item {
+        width: calc(50% - 3rem);
+    }
+
+    .layout__news {
+        padding: 8rem 0;
+    }
+
+    .layout__contact {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .layout__contact::before {
+        height: 60rem;
+    }
+
+    .contact__title {
+        width: 100%;
+    }
+
+    .contact__btn {
+        padding: 1.8rem 3.5rem;
+    }
+
+    .contact__thumb--chat {
+        margin-right: -13rem;
+        margin-bottom: -0.8rem;
+        width: 70%;
+    }
+
+    .contact__img {
+        width: 100%;
+    }
+
+    .contact__thumb--laptop {
+        left: 0;
+        bottom: 0;
+    }
+
+    .contact__thumb--mobile {
+        right: -8rem;
+        bottom: 0;
+    }
+
+    .contact__img {
+        width: 70%;
+    }
+
+    .social__img {
+        font-size: 2rem;
+    }
+
+    .footer__main {
+        flex-direction: column;
+    }
+
+    .footer__fleft {
+        width: 100%;
+    }
+
+    .fleft__container {
+        border: none;
+    }
+
+    .footer__fright {
+        width: 100%;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        flex-basis: auto;
+        text-align: center;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .footer__links {
+        flex-basis: auto;
+        text-align: center;
+    }
+
+    .footer__flinks {
+        justify-content: center;
     }
 
 }

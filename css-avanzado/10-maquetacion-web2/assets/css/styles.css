@@ -1553,3 +1553,59 @@ body {
     top: 46%;
     left: 78.5%;
 }
+
+/* NAVEGACION RESPONSIVE */
+.navbar__mobile-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-btn__wrap {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--color-text-body);
+    border: none;
+    border-radius: 3.2rem;
+    -webkit-border-radius: 3.2rem;
+    -moz-border-radius: 3.2rem;
+    -ms-border-radius: 3.2rem;
+    -o-border-radius: 3.2rem;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-btn__line {
+    display: block;
+    background-color: var(--color-secondary);
+    height: 0.2rem;
+    width: 2rem;
+    margin-bottom: 0.4rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.mobile-btn__line:last-child {
+    width: 1rem;
+    margin-bottom: 0rem;
+    margin-right: -1rem;
+}
+
+.menu-mobile {
+    display: block;
+}

@@ -122,6 +122,10 @@
         display: none;
     }
 
+    .navbar__mobile-btn {
+        display: block;
+    }
+
     .layout__banner {
         min-height: 100%;
         margin: 0 3rem;

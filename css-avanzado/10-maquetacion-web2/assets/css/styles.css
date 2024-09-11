@@ -20,7 +20,7 @@
 
 /*! ESTILOS GENERALES */
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -52,6 +52,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu__navbar--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 10%);
+    padding: 1.5rem 8rem;
 }
 
 .navbar__logo {
@@ -1607,25 +1618,30 @@ body {
 }
 
 .menu-mobile {
-    display: none;
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     z-index: 10;
     width: 30rem;
     height: 100%;
     background-color: var(--color-secondary);
-    left: 0px;
+    left: -300px;
     top: 0;
     padding: 5rem 1rem;
     padding-top: 0;
     box-shadow: 0px 0px 85px -35px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
-    transition: all 800ms ease-in-out;
-    -webkit-transition: all 800ms ease-in-out;
-    -moz-transition: all 800ms ease-in-out;
-    -ms-transition: all 800ms ease-in-out;
-    -o-transition: all 800ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.menu-mobile--show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
 }
 
 .menu-mobile__header {

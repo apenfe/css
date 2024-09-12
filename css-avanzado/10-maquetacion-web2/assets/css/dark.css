@@ -1,0 +1,76 @@
+:root {
+    --mx-width: 1320px;
+
+    --color-text-body: #D3D3D4;
+    --color-primary: #5955E8;
+    --color-secondary: #D3D3D4;
+    --color-banner: #27272E;
+    --color-text-btn: #FFF;
+    --color-bg-btn: #2522BA;
+    --color-subtitle: #C75c6F;
+    --color-title: #D3D3D4;
+    --color-bg-services: #262730;
+    --color-bg-projects: #272831;
+    --color-bg-dark: #262730;
+    --color-text-description: #99a1a4;
+    --color-hover-dark: #F9D56D;
+    --color-borders: #393940;
+}
+
+body {
+    background-color: #212121;
+}
+
+.nav__title:hover {
+    color: var(--color-text-body);
+}
+
+.nav__submenu {
+    background-color: var(--color-banner);
+}
+
+.banner__btn {
+    background-color: var(--color-primary);
+}
+
+.menu__navbar--fixed {
+    background-color: var(--color-banner);
+}
+
+.project__content {
+    background-color: var(--color-banner);
+}
+
+.project__title:hover {
+    color: var(--color-hover-dark);
+}
+
+.layout__contact::before {
+    background-color: var(--color-banner);
+}
+
+.new__more {
+    color: var(--color-text-body);
+}
+
+.contact__subtitle {
+    color: var(--color-hover-dark);
+}
+
+.contact__btn {
+    background-color: var(--color-primary);
+}
+
+.fleft__group {
+    background-color: #171717;
+    box-shadow: none;
+}
+
+.fleft__form-control {
+    background-color: #171717;
+    color: var(--color-title);
+}
+
+.widget__link:hover {
+    color: var(--color-hover-dark);
+}

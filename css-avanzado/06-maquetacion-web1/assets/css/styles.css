@@ -361,11 +361,27 @@ body {
 
 /* INFORMACION PERSONAL */
 
+.about__slider {
+    margin-bottom: 3rem;
+}
+
+.carousel-inner {
+    height: 500px;
+    /* Define un tamaño fijo */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ajusta las imágenes sin deformarlas */
+}
+
 .about__personal-info {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .personal-info__bio {
@@ -731,6 +747,42 @@ body {
     margin-bottom: 5rem;
 }
 
+.resume__stack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.stack {
+    flex-basis: 30%;
+}
+
+.resume__stack-carrousel {
+    height: 20rem;
+}
+
+.carousel-item-stack img {
+    max-height: 100%;
+    /* Asegura que no sobrepase el alto del contenedor */
+    max-width: 100%;
+    /* Asegura que no sobrepase el ancho del contenedor */
+    width: 80%;
+    /* Asegura que la imagen ocupe todo el ancho */
+    height: 80%;
+    /* Asegura que la imagen ocupe todo el alto */
+    object-fit: contain;
+    /* Mantiene la proporción del logo y lo ajusta al contenedor */
+    padding: 0.5rem;
+    /* Opcional: agrega espacio alrededor si el logo parece estar muy cerca de los bordes */
+    background-color: white;
+    /* Opcionin deformarlas */
+}
+
 .timelines__timeline {
     position: relative;
     width: 100%;
@@ -743,6 +795,24 @@ body {
     flex-basis: 30%;
     text-align: right;
     padding-right: 2.5rem;
+}
+
+.timeline__icon-image {
+    cursor: pointer;
+    width: 60px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.timeline__icon-image:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .timeline__year {
@@ -960,6 +1030,19 @@ body {
     background-color: var(--color-secondary);
     border-radius: 0.3rem;
     color: var(--color-principal);
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+
+.knowledges__option:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 /* CV CERTIFICADOS */
@@ -1301,6 +1384,10 @@ body {
     z-index: auto;
     color: var(--color-company);
     transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
 }
 
 .form__input:focus~label,
@@ -1363,4 +1450,39 @@ body {
 .contact__iframe {
     width: 100%;
     height: 14rem;
+}
+
+/* ESTILOS BOTON MODO OSCURO */
+.switcher {
+    position: fixed;
+    top: 20rem;
+    left: 0;
+    background-color: var(--color-secondary);
+    border-radius: 0 3rem 3rem 0;
+    -webkit-border-radius: 0 3rem 3rem 0;
+    -moz-border-radius: 0 3rem 3rem 0;
+    -ms-border-radius: 0 3rem 3rem 0;
+    -o-border-radius: 0 3rem 3rem 0;
+    padding: 1rem;
+    z-index: 5;
+}
+
+.switcher__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+.switcher__icon-light,
+.switcher__icon-dark {
+    color: var(--color-principal);
+    font-size: 1.8rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.6rem;
+}
+
+.switcher__icon-dark {
+    display: none;
 }

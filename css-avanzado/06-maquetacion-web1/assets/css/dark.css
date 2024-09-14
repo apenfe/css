@@ -1,0 +1,21 @@
+:root {
+    --color-principal: #333;
+    --color-secondary: #04B4E0;
+
+    --color-background: #313131;
+    --color-transparent: transparent;
+
+    --color-icon: #B6B6B6;
+    --color-titles: #222222;
+    --color-subtitle: #888;
+    --color-text: #555;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+
+    --color-scrollbar: #D3D3D4;
+    --color-background-crollbar: #eee;
+
+    --color-background-certificate: #F5F5F5;
+    --color-background-contact: #FCFCFC;
+}

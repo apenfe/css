@@ -11,6 +11,7 @@
 
 
         <!--ESTILOS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
         <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css"/>
         <link rel="stylesheet" href="./assets/css/reset.css"/>
@@ -23,12 +24,27 @@
 
         <!--SCRIPT-->
         <script src="./assets/js/menu.js" defer></script>
+        <script src="./assets/js/dark.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
         <title>APENFE | DEVELOPER</title>
 
     </head>
 
     <body>
+
+        <!-- boton modo oscuro -->
+        <div class="switcher">
+            <button class="switcher__btn">
+                <span class="switcher__icon-light">
+                    <i class="fa-solid fa-moon switcher__icon"></i>
+                </span>
+                <span class="switcher__icon-dark">
+                    <i class="fa-solid fa-lightbulb switcher__icon"></i>
+                </span>
+            </button>
+        </div>
         
         <!-- Layout principal --> 
         <div class="layout">
@@ -170,8 +186,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://odins.es/" target="_blank" style="cursor: pointer;">
-                                            <img src="./assets/img/odins_logo.jpeg" alt="odins solutions" width="50px">
+                                        <a class="timeline__icon-link" href="https://odins.es/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/odins_logo.jpeg" alt="odins solutions" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2024</h4>
                                         <span class="timeline__company">Odins Solutions</span>
@@ -193,8 +209,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.linkedin.com/company/m1-abrams-power-sl/" target="_blank" style="cursor: pointer;">
-                                            <img src="./assets/img/m1_abrams_power_sl_logo.jpeg" alt="m1 abrams power" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.linkedin.com/company/m1-abrams-power-sl/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/m1_abrams_power_sl_logo.jpeg" alt="m1 abrams power" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2023</h4>
                                         <span class="timeline__company">M1 Abrams Power</span>
@@ -220,8 +236,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://btd.es/en/home-english/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/btd.png" alt="btd" width="50px">
+                                        <a class="timeline__icon-link" href="https://btd.es/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/btd.png" alt="btd" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2021</h4>
                                         <span class="timeline__company">BTD Proyectos</span>
@@ -244,8 +260,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.boluda.com.es/es/inicio/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/boluda.png" alt="boluda" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.boluda.com.es/es/inicio/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/boluda.png" alt="boluda" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2021</h4>
                                         <span class="timeline__company">Boluda Towage</span>
@@ -267,8 +283,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.velamarelectricidad.es/" target="_blank" style="cursor: pointer;">
-                                            <img src="./assets/img/velamar.png" alt="velamar" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.velamarelectricidad.es/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/velamar.png" alt="velamar" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2020</h4>
                                         <span class="timeline__company">Velamar</span>
@@ -291,8 +307,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://sede.mitma.gob.es/SEDE_ELECTRONICA/LANG_CASTELLANO/OFICINAS_SECTORIALES/MARINA_MERCANTE/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/Ancla_logo_Marina_Mercante.png" alt="marina mercante" width="50px">
+                                        <a class="timeline__icon-link" href="https://sede.mitma.gob.es/SEDE_ELECTRONICA/LANG_CASTELLANO/OFICINAS_SECTORIALES/MARINA_MERCANTE/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/Ancla_logo_Marina_Mercante.png" alt="marina mercante" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2017</h4>
                                         <span class="timeline__company">Marina Mercante</span>
@@ -323,8 +339,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.uoc.edu/es" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/Logo_UOC.svg.png" alt="uoc" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.uoc.edu/es" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/Logo_UOC.svg.png" alt="uoc" width="50px">
                                         </a>
                                         <h4 class="timeline__year">Actualidad</h4>
                                         <span class="timeline__company">Universidad Oberta de Cataluña (UOC)</span>
@@ -345,8 +361,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.iescierva.net/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/logo_iescierva.jpg" alt="ies cierva" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.iescierva.net/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/logo_iescierva.jpg" alt="ies cierva" width="50px">
                                         </a>
                                         <h4 class="timeline__year">Actualidad</h4>
                                         <span class="timeline__company">IES Cierva</span>
@@ -367,8 +383,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://www.usj.es/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/san jorge.jpeg" alt="san jorge" width="50px">
+                                        <a class="timeline__icon-link" href="https://www.usj.es/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/san jorge.jpeg" alt="san jorge" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2022</h4>
                                         <span class="timeline__company">Universidad San Jorge</span>
@@ -390,8 +406,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://elpolitecnico.es/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/cifp-politecnico_apaisado_HD.png" alt="cifp politecnico" width="50px">
+                                        <a class="timeline__icon-link" href="https://elpolitecnico.es/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/cifp-politecnico_apaisado_HD.png" alt="cifp politecnico" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2020</h4>
                                         <span class="timeline__company">IES Politécnico</span>
@@ -415,8 +431,8 @@
                                 <article class="timelines__timeline">
 
                                     <header class="timeline__header">
-                                        <a href="https://portal.edu.gva.es/03002007/" target="_blank" style="cursor: pointer;"></a>
-                                            <img src="./assets/img/maritimo.png" alt="cifp mediterraneo" width="50px">
+                                        <a class="timeline__icon-link" href="https://portal.edu.gva.es/03002007/" target="_blank">
+                                            <img class="timeline__icon-image" src="./assets/img/maritimo.png" alt="cifp mediterraneo" width="50px">
                                         </a>
                                         <h4 class="timeline__year">2018</h4>
                                         <span class="timeline__company">Marina Mercante Española</span>
@@ -434,6 +450,122 @@
 
                                 </article>
 
+                            </div>
+
+                            <div class="resume__stack">
+                    
+                                <div id="carouselExampleAutoplaying" class=" stack carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner resume__stack-carrousel">
+                                        <div class="carousel-item active carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="d-block w-100"/>
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />                              
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">       
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <div id="carouselExampleAutoplaying" class="stack carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner resume__stack-carrousel">
+                                        <div class="carousel-item active carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">    
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg" />       
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">        
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">  
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
+                                        </div>
+                                        
+                                    </div> 
+                                </div>
+
+                                <div id="carouselExampleAutoplaying" class="stack carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner resume__stack-carrousel">
+                                        <div class="carousel-item active carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original-wordmark.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">     
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />                             
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original-wordmark.svg" />                                 
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack"> 
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />                             
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original-wordmark.svg" />                              
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg" />                               
+                                        </div>
+                                        <div class="carousel-item carousel-item-stack">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original-wordmark.svg" />                                    
+                                        </div>
+                                    </div>   
+                                </div>
+                               
                             </div>
 
                         </section>
@@ -872,6 +1004,22 @@
                                     </a>
                                     <span class="certificate__id">ID Verificación: 538226</span>
                                     <span class="certificate__date">02/08/2021</span>
+                                </div>
+                            </article>
+
+                            <!-- cnc -->
+                            <article class="certificates__certificate">
+                                <div class="certificate__logo">
+                                    <a href="https://courses.edx.org/certificates/e4f8b1c2ec9743c1bc2405c4cc167922" target="_blank">
+                                        <img class="certificate__image" src="assets/img/edx.png" alt="certificado">
+                                    </a>
+                                </div>
+                                <div class="certificate__content">
+                                    <a href="./assets/documents/Auditor interno iso 9001.pdf" target="_blank">
+                                        <h4 class="certificate__title">Control Numérico por Computadora</h4>
+                                    </a>
+                                    <span class="certificate__id">ID Verificación: e4f8b1c2ec9743c1bc2405c4cc167922</span>
+                                    <span class="certificate__date">01/01/2021</span>
                                 </div>
                             </article>
 

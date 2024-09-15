@@ -1,21 +1,34 @@
 :root {
-    --color-principal: #333;
+    --color-principal: #222222;
+    /* Fondo principal oscuro */
     --color-secondary: #04B4E0;
+    /* Mantén el color secundario brillante */
 
-    --color-background: #313131;
+    --color-background: #121212;
+    /* Fondo oscuro */
     --color-transparent: transparent;
 
-    --color-icon: #B6B6B6;
-    --color-titles: #222222;
-    --color-subtitle: #888;
-    --color-text: #555;
+    --color-icon: #E0E0E0;
+    /* Iconos claros para buen contraste */
+    --color-titles: #FFFFFF;
+    /* Títulos en blanco para contraste */
+    --color-subtitle: #CCCCCC;
+    /* Subtítulos en gris claro */
+    --color-text: #BBBBBB;
+    /* Texto en un tono gris claro */
 
-    --color-border-reviews: #E5E6E7;
-    --color-company: #A5A6A7;
+    --color-border-reviews: #333333;
+    /* Bordes más oscuros pero sutiles */
+    --color-company: #888888;
+    /* Color de texto para empresas en gris intermedio */
 
-    --color-scrollbar: #D3D3D4;
-    --color-background-crollbar: #eee;
+    --color-scrollbar: #555555;
+    /* Scrollbar oscuro */
+    --color-background-crollbar: #222222;
+    /* Fondo de scrollbar más oscuro */
 
-    --color-background-certificate: #F5F5F5;
-    --color-background-contact: #FCFCFC;
+    --color-background-certificate: #1A1A1A;
+    /* Fondo de certificados en un tono ligeramente más claro que el principal */
+    --color-background-contact: #1F1F1F;
+    /* Fondo de contacto también en gris oscuro */
 }

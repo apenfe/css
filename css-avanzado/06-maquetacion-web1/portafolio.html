@@ -24,6 +24,7 @@
         <!--SCRIPT-->
         <script src="./assets/js/menu.js" defer></script>
         <script src="./assets/js/dark.js"></script>
+        <script src="./assets/js/portafolio.js"></script>
 
         <title>APENFE | DEVELOPER</title>
 
@@ -173,27 +174,27 @@
 
                         <ul class="portfolio__menu">
 
-                            <li class="portfolio__option portfolio__option--active">
+                            <li id="todo" class="portfolio__option portfolio__option--active">
                                 <a href="#" class="portfolio__link">Todo</a>
                             </li>
 
-                            <li class="portfolio__option">
+                            <li id="cursos" class="portfolio__option">
                                 <a href="#" class="portfolio__link">Cursos</a>
                             </li>
 
-                            <li class="portfolio__option">
+                            <li id="web" class="portfolio__option">
                                 <a href="#" class="portfolio__link">WEB</a>
                             </li>
 
-                            <li class="portfolio__option ">
+                            <li id="codigo" class="portfolio__option ">
                                 <a href="#" class="portfolio__link">Codigo</a>
                             </li>
 
-                            <li class="portfolio__option ">
+                            <li id="videos" class="portfolio__option ">
                                 <a href="#" class="portfolio__link">Videos</a>
                             </li>
 
-                            <li class="portfolio__option ">
+                            <li id="proyectos" class="portfolio__option ">
                                 <a href="#" class="portfolio__link">Proyectos</a>
                             </li>
 
@@ -204,7 +205,7 @@
                     <section class="portfolio__gallery">
 
                         <!-- PROYECTO MACHINE LEARNING -->
-                        <figure class="gallery__item">
+                        <figure id="codigo" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="https://www.youtube.com/watch?v=4PGkNWABzNk" class="gallery__link">
                                     <video src="./assets/img/portafolio/saildrone.mp4" autoplay muted loop></video>
@@ -221,7 +222,7 @@
                         </figure>
 
                         <!-- PROYECTO METSAT -->
-                        <figure class="gallery__item">
+                        <figure id="proyectos" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="https://www.youtube.com/watch?v=s7_V2QnWPFs" class="gallery__link">
                                      <video src="./assets/img/portafolio/metsat.mp4" autoplay muted loop></video>
@@ -238,10 +239,10 @@
                         </figure>
 
                         <!-- LANDING PAGE -->
-                        <figure class="gallery__item">
+                        <figure id="web" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="./web8" class="gallery__link">
-                                    <video src="./assets/img/portafolio/landinpage.mp4" autoplay muted loop></video>
+                                    <video src="./assets/img/portafolio/landingpage.mp4" autoplay muted loop></video>
                                 </a>
                             </div>
 
@@ -258,7 +259,7 @@
                         </figure>
 
                         <!-- REPARTO DE PRECIO -->
-                        <figure class="gallery__item">
+                        <figure id="web" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="./web7" class="gallery__link">
                                     <video src="./assets/img/portafolio/tip.mp4" autoplay muted loop></video>
@@ -277,7 +278,7 @@
                         </figure>
 
                         <!-- DETECTOR DE ATMOSFERAS -->
-                        <figure class="gallery__item">
+                        <figure id="proyectos" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="https://github.com/apenfe/atmosphere_detector" class="gallery__link">
                                     <video src="./assets/img/portafolio/atex.mp4" autoplay muted loop></video>
@@ -295,7 +296,7 @@
                         </figure>
 
                         <!-- BLOG SIMPLE -->
-                        <figure class="gallery__item">
+                        <figure id="web" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="./web4" class="gallery__link">
                                     <video src="./assets/img/portafolio/blog.mp4" autoplay muted loop></video>
@@ -314,7 +315,7 @@
                         </figure>
 
                         <!-- RESOLUCION LABERINTOS -->
-                        <figure class="gallery__item">
+                        <figure id="codigo" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="https://github.com/apenfe/maze_solver" class="gallery__link">
                                     <video src="./assets/img/portafolio/maze.mp4" autoplay muted loop></video>
@@ -335,7 +336,7 @@
                         </figure>
 
                         <!-- ACADEMIA TECH SIMPLE -->
-                        <figure class="gallery__item">
+                        <figure id="web" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="./web1" class="gallery__link">
                                     <video src="./assets/img/portafolio/academia.mp4" autoplay muted loop></video>
@@ -354,7 +355,7 @@
                         </figure>
 
                         <!-- NEMESIS -->
-                        <figure class="gallery__item">
+                        <figure id="proyectos" class="gallery__item gallery__item--show">
                             <div class="gallery__container__image">
                                 <a href="https://github.com/apenfe/Nemesis" class="gallery__link">
                                     <video src="./assets/img/portafolio/nemesis.mp4" autoplay muted loop></video>

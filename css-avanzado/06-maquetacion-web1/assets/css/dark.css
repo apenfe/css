@@ -1,10 +1,10 @@
 :root {
-    --color-principal: #222222;
+    --color-principal: #5c5959;
     /* Fondo principal oscuro */
     --color-secondary: #04B4E0;
     /* Mantén el color secundario brillante */
 
-    --color-background: #121212;
+    --color-background: #a1a1a1;
     /* Fondo oscuro */
     --color-transparent: transparent;
 
@@ -14,10 +14,10 @@
     /* Títulos en blanco para contraste */
     --color-subtitle: #CCCCCC;
     /* Subtítulos en gris claro */
-    --color-text: #BBBBBB;
+    --color-text: #e7e3e3;
     /* Texto en un tono gris claro */
 
-    --color-border-reviews: #333333;
+    --color-border-reviews: #ffffff;
     /* Bordes más oscuros pero sutiles */
     --color-company: #888888;
     /* Color de texto para empresas en gris intermedio */
@@ -27,8 +27,8 @@
     --color-background-crollbar: #222222;
     /* Fondo de scrollbar más oscuro */
 
-    --color-background-certificate: #1A1A1A;
+    --color-background-certificate: #ffffff;
     /* Fondo de certificados en un tono ligeramente más claro que el principal */
-    --color-background-contact: #1F1F1F;
+    --color-background-contact: #838383;
     /* Fondo de contacto también en gris oscuro */
 }

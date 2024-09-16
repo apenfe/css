@@ -1475,14 +1475,14 @@ body {
 /* ESTILOS BOTON MODO OSCURO */
 .switcher {
     position: fixed;
-    top: 20rem;
-    left: 0;
+    top: 47rem;
+    right: 0;
     background-color: var(--color-secondary);
-    border-radius: 0 3rem 3rem 0;
-    -webkit-border-radius: 0 3rem 3rem 0;
-    -moz-border-radius: 0 3rem 3rem 0;
-    -ms-border-radius: 0 3rem 3rem 0;
-    -o-border-radius: 0 3rem 3rem 0;
+    border-radius: 3rem 0 0 3rem;
+    -webkit-border-radius: 3rem 0 0 3rem;
+    -moz-border-radius: 3rem 0 0 3rem;
+    -ms-border-radius: 3rem 0 0 3rem;
+    -o-border-radius: 3rem 0 0 3rem;
     padding: 1rem;
     z-index: 5;
 }

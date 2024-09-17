@@ -32,3 +32,70 @@
     --color-background-contact: #838383;
     /* Fondo de contacto también en gris oscuro */
 }
+
+.timeline__divider {
+
+    background-color: white;
+}
+
+.timeline__company {
+    color: var(--color-secondary);
+}
+
+.certificate__content {
+    background-color: #838383;
+}
+
+.portfolio__link {
+    color: white;
+}
+
+.gallery__item {
+    background-color: #838383;
+    border: 1px solid var(--color-secondary);
+}
+
+.gallery__title {
+    color: white;
+}
+
+.article__mask {
+    background-color: #838383;
+}
+
+.article__bottom {
+    background-color: #838383;
+    border: 0.1rem solid var(--color-secondary);
+    border-top: none;
+}
+
+#accordion .card {
+    background-color: #343a40;
+    /* Fondo oscuro para las tarjetas del acordeón */
+    color: #fff;
+    /* Texto blanco */
+}
+
+#accordion .card-header {
+    background-color: #495057;
+    /* Fondo más oscuro para los encabezados */
+    color: #fff;
+    /* Texto blanco para los encabezados */
+}
+
+#accordion .card-body {
+    background-color: #6c757d;
+    /* Fondo gris oscuro para el cuerpo del acordeón */
+    color: #fff;
+    /* Texto blanco */
+}
+
+#accordion a {
+    color: #f8f9fa;
+    /* Texto claro para los enlaces */
+}
+
+#accordion a:hover {
+    color: #ced4da;
+    /* Color más claro en hover */
+}

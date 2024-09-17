@@ -780,8 +780,12 @@ body {
     /* Mantiene la proporción del logo y lo ajusta al contenedor */
     padding: 0.5rem;
     /* Opcional: agrega espacio alrededor si el logo parece estar muy cerca de los bordes */
-    background-color: white;
+    background-color: transparent;
     /* Opcionin deformarlas */
+}
+
+.carrousel-item-stack {
+    transition-duration: 0.3s;
 }
 
 .timelines__timeline {

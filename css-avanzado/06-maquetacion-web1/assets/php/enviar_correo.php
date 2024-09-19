@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Configurar el destinatario del correo (tu email)
-    $to = "adrian1414@hotmail.es";
+    $to = "a@a.es";
 
     // Asunto del correo
     $to = "Nuevo mensaje del formulario de contacto";
@@ -29,5 +29,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Hubo un problema al enviar el correo.";
     }
 }
-
-?>

@@ -366,7 +366,7 @@ body {
 }
 
 .carousel-inner {
-    height: 500px;
+    height: auto;
     /* Define un tamaño fijo */
 }
 
@@ -764,7 +764,8 @@ body {
 }
 
 .resume__stack-carrousel {
-    height: 20rem;
+    height: auto;
+    margin-bottom: 2rem;
 }
 
 .carousel-item-stack img {
@@ -1150,6 +1151,7 @@ body {
     flex-basis: 33%;
     padding: 0.7rem;
     border: 1px solid var(--color-border-reviews);
+    margin-bottom: 2rem;
 }
 
 .gallery__item--show {}
@@ -1479,7 +1481,7 @@ body {
 /* ESTILOS BOTON MODO OSCURO */
 .switcher {
     position: fixed;
-    top: 47rem;
+    top: 30rem;
     right: 0;
     background-color: var(--color-secondary);
     border-radius: 3rem 0 0 3rem;

@@ -10,5 +10,7 @@ JQuery/
 bootstrap/
 poppins/
 fontawesome-free-6.1.2-web/
+*.mp4
+.idea/
 
 

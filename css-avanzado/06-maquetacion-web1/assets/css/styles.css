@@ -1481,7 +1481,7 @@ body {
 /* ESTILOS BOTON MODO OSCURO */
 .switcher {
     position: fixed;
-    top: 30rem;
+    top: 50rem;
     right: 0;
     background-color: var(--color-secondary);
     border-radius: 3rem 0 0 3rem;

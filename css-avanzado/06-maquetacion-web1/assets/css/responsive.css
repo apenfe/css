@@ -21,6 +21,10 @@
         flex-basis: 31%;
     }
 
+    .switcher {
+        top: 50rem;
+    }
+
 }
 
 @media (width < 1570px) {
@@ -261,6 +265,10 @@
         flex-basis: 100%;
         padding-bottom: 3rem;
         margin: 0;
+    }
+
+    .switcher {
+        top: 30rem;
     }
 
 }
